@@ -263,7 +263,6 @@ body {
   transition: all 0.3s;
   overflow-y: auto;
   padding: 1rem 0 4rem;
-  margin-top: 2rem;
   cursor: pointer !important;
 }
 #sidebar.active {
@@ -320,10 +319,16 @@ body {
   background: #18243E;
   color: #fff;
   transition: all 0.3s;
-  padding: 1rem 0 3rem;
-  margin-top: 2rem;
+  padding: 0 0 3rem;
   cursor: pointer;
 }
+
+.top_nav_sidebar_icon{
+  color: whitesmoke;
+}
+#sidebar_minimal .border-bottom{
+    border-bottom: 1px solid #f7f7f766 !important;
+  }
 #sidebar_minimal.active {
   margin-left: -15rem;
 }
@@ -360,7 +365,6 @@ body {
 #main-container {
   width: calc(100% - 15rem);
   padding: 1rem 1rem 0;
-  margin-top: 2.5rem;
   transition: all 0.3s;
   position: absolute;
   top: 0;
@@ -1165,3 +1169,201 @@ font-weight: 550;}
   color: #E30613!important;
 }
  
+/* Statement Stepper */
+
+
+:root {
+  --background-color: #FFFFFF;
+  --primary-color: #E66A53;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.08);
+  font-family: Arial;
+  display: flex;
+}
+
+.steps {
+  padding: 24px 0;
+  position: relative;
+  margin: auto;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 24px;
+  width: 1px;
+  border: 1px dashed #CBCED4; 
+  left: calc(50px / 2);
+  z-index: 1;
+}
+
+.steps::after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 15px;
+  left: calc(50px / 2);
+  bottom: 24px;
+  transform: translateX(-45%);
+  z-index: 2;
+  border: 2px solid #747C8B;
+}
+
+.step {
+  padding: 0 20px 24px 50px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  background-color: #FFF;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color:#fff;
+  border-radius: 15px;
+  left: calc(50px / 2);
+  transform: translateX(-45%);
+  z-index: 2;
+  border: 2px solid #FAB212;
+}
+
+.step.minimized.step::before {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color:#fff;
+  border-radius: 15px;
+  left: calc(50px / 2);
+  transform: translateX(-45%);
+  z-index: 2;
+  border: 2px solid #44AB1A;
+}
+
+.step::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  border: 1px dashed #CBCED4;
+  left: calc(50px / 2);
+  top: 0;
+  z-index: 1;
+}
+
+.step.minimized {
+  background-color: #FFF;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.header {
+  user-select: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.subheader {
+  user-select: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.step-content {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.step.minimized > .step-content {
+  height: 0px;
+}
+
+.step-content.one {
+  height: 460px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.step-content.two {
+  height: 600px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.step-content.three {
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: red;
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: rgb(255, 0, 255);
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+/* Irrelevant styling things */
+.close-btn:hover {
+  background-color: rgba(255, 0, 255, 0.6);
+}
+
+.close-btn:focus {
+  outline: 0;
+}
+
+.next-btn:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.next-btn:focus {
+  outline: 0;
+}
+
+.step.minimized:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}

@@ -15,10 +15,11 @@
    </head>
    <body>
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top top-nav p-0 ">
-         <button type="button" id="sidebarCollapse" class="btn btn-link pl-0 pr-3 ms-1">
-         <img src="img/top_nav/top_nav_sidebar_icon.svg" class="top_nav_sidebar_icon">
-         </button>
+      <!-- <nav>
+          <button type="button" id="sidebarCollapse" class="btn btn-link pl-0 pr-3 ms-1">
+         <img src="img/top_nav/top_nav_sidebar_icon.svg" class="">
+         </button> 
+
          <a class="navbar-brand ms-2" href="index.html">
          <img src="img/top_nav/company_logo/top_nav_company_logo.png" height="18" alt="Company Logo">
          </a>
@@ -52,9 +53,11 @@
                </li>
             </ul>
          </div>
-      </nav>
+      </nav> -->
       <!-- Sidebar Minimal Holder -->
       <nav id="sidebar_minimal" class="d-none d-md-block">
+    <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
+
          <a class="navbar-brand d-flex justify-content-center me-0" href="index.html">
            <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo">
          </a>
@@ -130,11 +133,20 @@
        </nav>
       <!-- Sidebar Holder -->
       <nav id="sidebar" class="active">
+
+
+         <div class="d-flex flex justify-content-between align-items-center">
+            <a class="navbar-brand mx-3" href="index.html">
+               <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo">
+             </a>
+  
+             <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i>
+  
+         </div>
          <ul class="list-group list-group-flush sidebar-menu-item">
            <!-- Group 1 -->
-           <a class="navbar-brand text-center" href="index.html">
-             <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo">
-           </a>
+          
+
            <!-- Menu Items -->
            <li>
              <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
@@ -245,7 +257,7 @@
          </div>
          <div class="mt-2">
             <div class="row">
-               <div class="col-sm-6 col-lg-3 statement-li">
+               <div class="col-sm-12 col-lg-3 statement-li">
                   <div class="card">
                      <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
@@ -465,10 +477,38 @@
 
 
 
-                                 <button type="button" class="btn btn-primary me-1 rounded-pill ">All</button>
-                                 <button type="button" class="btn btn-default me-1 rounded-pill">Failed</button>
-                                 <button type="button" class="btn btn-default me-1 rounded-pill">Pending </button>
-                                 <button type="button" class="btn btn-default me-1 rounded-pill">Completed </button>
+            <button type="button" class="btn btn-primary me-1 rounded-pill ">All</button>
+            <button type="button" class="btn btn-default me-1 rounded-pill">Failed</button>
+            <button type="button" class="btn btn-default me-1 rounded-pill">Pending </button>
+            <button type="button" class="btn btn-default me-1 rounded-pill">Completed </button>
+
+
+            <div class="steps mt-4">
+               <div class="step">
+                 <div class="step-header">
+                   <div class="header">Validated & Debulked  </div>
+                   <div class="subheader">At: 08-08-2020  |  10:07:47.859        By: System </div>
+                   <div class="subheader">Instruction started DEBULKING using in memory parsing</div>
+
+                 </div>
+               
+               </div>
+               <div class="step minimized">
+                 <div class="step-header">
+                   <div class="header">This is step two!</div>
+                   <div class="subheader">The content is a little bigger!</div>
+                 </div>
+                 
+               </div>
+               <div class="step minimized">
+                 <div class="step-header">
+                   <div class="header">And finally step three!</div>
+                   <div class="subheader">Last but not the least!</div>
+                 </div>
+                 
+               </div>
+             </div>
+          
 
 
                               
@@ -505,10 +545,17 @@
                  $('.collapse.in').toggleClass('in');
                  $('a[aria-expanded=true]').attr('aria-expanded', 'false');
              });
+             $('#sidebarCollapsed').on('click', function() {
+                 $('#sidebar, #main-container, #footer').toggleClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+      
          });
          
+         
       </script>
-      <script>
+       <script>
          $(document).ready(function() {
          var inputWidth = $('.advance-search-dropdown').outerWidth();
          $('#advanced-search').css('width', inputWidth);
