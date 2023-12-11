@@ -1060,8 +1060,8 @@ cursor: pointer;
 }
 
 .bankdata-li-div{
- max-height: 500px;
- overflow-y: auto;
+  overflow-y: auto;
+  height: calc(100vh - 135px);
 }
 .f-18{
   font-size: 18px;;
@@ -1071,7 +1071,8 @@ cursor: pointer;
   font-size: 14px !important;
 }
 .gbp-calender-div{
-  max-height: 450px; overflow-y: auto;
+  overflow-y: auto;
+  height: calc(100vh - 182px);
 }
 
 .calenders-sub {
@@ -1145,7 +1146,7 @@ font-weight: 550;}
 
 /* Index Page start */
 .calc-height{
-  /* height: calc(100vh - 54px); */
+  height: calc(100vh - 170px); 
   min-height: 450px !important;
 }
 
