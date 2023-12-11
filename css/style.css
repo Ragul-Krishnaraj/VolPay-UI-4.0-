@@ -588,7 +588,7 @@ div#navbarsExampleDefault {
   border-color: #CBCED4 !important;
 }
 
-.btn-primary {
+/* .btn-primary {
   font-size: 12px !important;
   color: #003B7C !important;
   letter-spacing: 1px;
@@ -597,7 +597,7 @@ div#navbarsExampleDefault {
   border-radius: 40px !important;
   background: #D7E0E5 !important;
   transition: all 0.3s ease 0s;
-}
+} */
 
 .btn-primary:hover {
   color: #003B7C !important;
@@ -613,7 +613,7 @@ div#navbarsExampleDefault {
   letter-spacing: 1px;
   line-height: 15px;
   border: 1px solid #CBCED4 !important;
-  border-radius: 40px !important;
+  /* border-radius: 40px !important; */
   background: #fff !important;
   transition: all 0.3s ease 0s;
 }
@@ -631,7 +631,7 @@ div#navbarsExampleDefault {
   letter-spacing: 1px;
   line-height: 15px;
   border: 1px solid #003B7C !important;
-  border-radius: 40px !important;
+  /* border-radius: 40px !important; */
   background: #003B7C !important;
   transition: all 0.3s ease 0s;
 }
@@ -1161,4 +1161,7 @@ font-weight: 550;}
 /* Index Page End */
 
 
+.error {
+  color: #E30613!important;
+}
  
