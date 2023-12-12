@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'OpenSans', sans-serif !important;
+  font-family: system-ui, "Open Sans", sans-serif !important;
   font-size: 14px !important;
 }
 
@@ -1219,7 +1219,6 @@ body {
   height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.08);
-  font-family: Arial;
   display: flex;
 }
 
@@ -1402,4 +1401,8 @@ margin-right: 15px;
 .statement-info-4 {
   border-right: 2px solid #fff !important;
   margin-right: 8px;
+}
+
+.bank-data-heading{
+  font-weight: 600;
 }
