@@ -1095,6 +1095,37 @@ font-weight: 550;}
   transform: translate(39px, 32px) !important;
 }
 
+.frwd-icon {
+  float: right;
+  margin-right: 6px;
+  margin-top: -27px;
+  position: relative;
+  z-index: 2;
+}
+
+.list-icon {
+  float: right;
+  margin-right: 30px;
+  margin-top: -27px;
+  position: relative;
+  z-index: 2;
+}
+.search-icon{
+  float: left;
+  margin-top: -27px;
+  position: relative;
+  z-index: 2;
+  margin-left: 10px;
+}
+.advance-search .dropdown-toggle::after{
+    display: none;
+  
+}
+
+.advance-search .form-control{
+padding: 0.375rem 2.75rem !important;
+}
+
 /* checkbox custom */
 
 .form-check-input:checked {

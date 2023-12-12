@@ -1,531 +1,452 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png"/>
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/style.css" type="text/css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-      <!-- Line Awesome Font Library -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-      <title>Statement</title>
-   </head>
-   <body>
-      <!-- Nav Bar -->
-      
-      <!-- Sidebar Minimal Holder -->
-      <nav id="sidebar_minimal" class="d-none d-md-block">
-    <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
 
-         <a class="navbar-brand d-flex justify-content-center me-0" href="index.html">
-           <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo">
-         </a>
-         <ul class="list-group list-group-flush sidebar-menu-item">
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Dashboard">
-               <i class="fas fa-chart-bar"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Instruction">
-               <i class="fas fa-clipboard"></i>
-                         </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Transactions">
-               <i class="fas fa-file-invoice-dollar"></i>
-             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown active">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Interactions">
-               <i class="far fa-handshake"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Data">
-               <i class="far fa-user"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Bank Data">
-               <i class="fas fa-university"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Onboarding Data">
-               <i class="fas fa-database"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Distribution Data">
-               <i class="fas fa-paper-plane"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
-             </div>
-           </li>
-           <li class="dropdown br-top fixed-bottom-menu">
-             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement">
-               <i class="fas fa-user-circle"></i>             </a>
-             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <a class="dropdown-item" href="#" title="Permission">Profile</a>
-               <a class="dropdown-item" href="#" title="Permission">Settings</a>
-               <a class="dropdown-item" href="#" title="Permission">Logout</a>
-             </div>
-           </li>
-         </ul>
-       </nav>
-      <!-- Sidebar Holder -->
-      <nav id="sidebar" class="active">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- Line Awesome Font Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Statement</title>
+</head>
 
-
-         <div class="d-flex flex justify-content-between align-items-center">
+<body>
+    <!-- Nav Bar -->
+    <!-- Sidebar Minimal Holder -->
+    <nav id="sidebar_minimal" class="d-none d-md-block">
+        <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
+        <a class="navbar-brand d-flex justify-content-center me-0" href="index.html">
+            <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo">
+        </a>
+        <ul class="list-group list-group-flush sidebar-menu-item">
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Dashboard">
+                    <i class="fas fa-chart-bar"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Instruction">
+                    <i class="fas fa-clipboard"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Transactions">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown active">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Interactions">
+                    <i class="far fa-handshake"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Data">
+                    <i class="far fa-user"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Bank Data">
+                    <i class="fas fa-university"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Onboarding Data">
+                    <i class="fas fa-database"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Distribution Data">
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+                </div>
+            </li>
+            <li class="dropdown br-top fixed-bottom-menu">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#" title="Permission">Profile</a>
+                    <a class="dropdown-item" href="#" title="Permission">Settings</a>
+                    <a class="dropdown-item" href="#" title="Permission">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- Sidebar Holder -->
+    <nav id="sidebar" class="active">
+        <div class="d-flex flex justify-content-between align-items-center">
             <a class="navbar-brand mx-3" href="index.html">
-               <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo">
-             </a>
-  
-             <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i>
-  
-         </div>
-         <ul class="list-group list-group-flush sidebar-menu-item">
-           <!-- Group 1 -->
-          
-
-           <!-- Menu Items -->
-           <li>
-             <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-               <i class="fas fa-cubes mr-2"></i></i>Label 1 </a>
-              
-           </li>
-           <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-1" data-parent="#sidebar">
-             <li>
-               <a class="nav-link" href="" title="">Label 2</a>
-             </li>
-             <li>
-               <a class="nav-link" href="" title="">Label 3</a>
-             </li>
-           </ul>
-           <!-- Group 1 Ends -->
-           <!-- Group 2 -->
-           <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</p>
-           <!-- Menu Items -->
-           <li>
-             <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits">
-               <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
-               
-           </li>
-           <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-item-4" data-parent="#sidebar">
-             <li>
-               <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a>
-             </li>
-             <li>
-               <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a>
-             </li>
-           </ul>
-           <!-- Group 3 -->
-           <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</p>
-           <!-- Menu Items 1 -->
-           <li>
-             <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard">
-               <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
-           </li>
-           <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-volpay-1" data-parent="#sidebar">
-             <li>
-               <a class="nav-link" href="#" title="Test Link">Test Link</a>
-             </li>
-             <li>
-               <a class="nav-link" href="#" title="Test Link">Test Link</a>
-             </li>
-           </ul>
-         </ul>
-       </nav>
-      <!-- Page main-container Holder -->
-      <div id="main-container" class="active">
-         <div class=" bd-highlight p-2 bg-white rounded-2">
+                <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo">
+            </a>
+            <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i>
+        </div>
+        <ul class="list-group list-group-flush sidebar-menu-item">
+            <!-- Group 1 -->
+            <!-- Menu Items -->
+            <li>
+                <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
+                    <i class="fas fa-cubes mr-2"></i>
+                    </i>Label 1 </a>
+            </li>
+            <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-1" data-parent="#sidebar">
+                <li>
+                    <a class="nav-link" href="" title="">Label 2</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="" title="">Label 3</a>
+                </li>
+            </ul>
+            <!-- Group 1 Ends -->
+            <!-- Group 2 -->
+            <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</p>
+            <!-- Menu Items -->
+            <li>
+                <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits">
+                    <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
+            </li>
+            <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-item-4" data-parent="#sidebar">
+                <li>
+                    <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a>
+                </li>
+            </ul>
+            <!-- Group 3 -->
+            <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</p>
+            <!-- Menu Items 1 -->
+            <li>
+                <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard">
+                    <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
+            </li>
+            <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-volpay-1" data-parent="#sidebar">
+                <li>
+                    <a class="nav-link" href="#" title="Test Link">Test Link</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#" title="Test Link">Test Link</a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <!-- Page main-container Holder -->
+    <div id="main-container" class="active">
+        <div class=" bd-highlight p-2 bg-white rounded-2">
             <div>
-               <div class="row m-0 d-flex justify-content-between">
-                  <div class="col-md-8 p-1  rounded shadow-sm border advance-search-dropdown" style=" max-width: calc(715px) !important;">
-                     <div class="input-group px-1">
-                        
-               
-
-                     <span class="material-symbols-outlined d-flex align-items-center icon-clr">
-                        search
-                        </span>
 
 
-                        <input type="text" class="form-control border-0 search" placeholder="Search..">
-                        <div class="input-group-btn">
-                        </div>
-                        <li class="nav-item dropdown list-unstyled d-flex align-items-center me-2 mt-2">
-                           <a class="text-primary cursor-pointer " id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false" >
-                           <span class="material-symbols-outlined icon-color">
-                           filter_list
-                           </span>
-                           </a>
-                           <ul class="dropdown-menu list-unstyled advanced-search advance-search-li" id="advanced-search">
-                              <form action="#" class="form-horizontal">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <div class="form-group p-3">
-                                          <p> ask for content </p>
-                                       </div>
+
+
+                <div class="row m-0 d-flex justify-content-between">
+                    <div class="col-md-8">
+
+                        <div class="dropdown w-100 advance-search">
+                            <a class="btn dropdown-toggle w-100 p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <span>
+                <i class="fas fa-search search-icon icon-color"></i>
+              </span>
+                                <span class="material-symbols-outlined icon-color list-icon"> filter_list </span>
+                                <span class="material-symbols-outlined  icon-color frwd-icon"> arrow_forward </span>
+                            </a>
+                            <ul class="dropdown-menu p-3 w-100" aria-labelledby="dropdownMenuLink" style="">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                     </div>
-                                 </div>
-                              </form>
-                           </ul>
-                        </li>
-                       
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4  d-flex align-items-center justify-content-end">
+                        <div class="text-right-sm">
+                            <i class="fab fa-searchengin icon-color me-2"></i>
+
+                            <span>
+                      <i class="fas fa-chart-bar icon-color me-2"></i>
+                      </span>
+                            <span>
+                         <i class="fas fa-cog icon-color"></i>
+                      </span>
+
+                        </div>
+                    </div>
+                </div>
 
 
-                     <span class="material-symbols-outlined d-flex align-items-center icon-color">
-                        arrow_forward
-                        </span>
-                     </div>
-                  </div>
-                  <div class="col-md-4  d-flex align-items-center justify-content-end">
-                     <div class="text-right-sm">
-                           <i class="fab fa-searchengin icon-color me-2"></i>
-                        </span>
-                        <span>
-                        <i class="fas fa-chart-bar icon-color me-2"></i>
-                        </span>
-                        <span >
-                           <i class="fas fa-cog icon-color"></i>
-                        </span>
 
-                     </div>
-                  </div>
-               </div>
+
+
+
+
             </div>
-         </div>
-         <div class="mt-2">
+        </div>
+        <div class="mt-2">
             <div class="row">
-               <div class="col-sm-12 col-lg-3 statement-li">
-                  <div class="card">
-                     <div class="card-header">
-                        <div class="d-flex justify-content-between align-items-center">
-                           <div class="btn-group" role="group" aria-label="Basic outlined example">
-                              <button type="button" class="btn btn-outline-primary btn-sm active">All</button>
-                              <button type="button" class="btn btn-outline-primary btn-sm">Received</button>
-                              <button type="button" class="btn btn-outline-primary btn-sm">Distributed</button>
-                           </div>
-                           <div>
-                              <div class="text-right-sm" role="tablist">
-                                 <span class=" icon-color f-14">
-                                    <i class="fas fa-filter"></i>
-                                 </span>
-                                 
-                                 <span class="icon-color f-14 ">
-                                    <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-               
-                                 </span>
-
-                              </div>
-                           </div>
+                <div class="col-sm-12 col-lg-3 statement-li">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-primary btn-sm active">All</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">Received</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">Distributed</button>
+                                </div>
+                                <div>
+                                    <div class="text-right-sm" role="tablist">
+                                        <span class=" icon-color f-14">
+                        <i class="fas fa-filter"></i>
+                      </span>
+                                        <span class="icon-color f-14 ">
+                        <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
+                      </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div style="max-height: 500px; overflow-y: auto;">
-                        <ul class="list-group">
-                           <li class="list-group-item selected ">
-                              <div class=" row">
-                                 <div class="col-md-2">
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                       <label class="form-check-label" for="flexCheckDefault">
-                                       </label>
+                        <div style="max-height: 500px; overflow-y: auto;">
+                            <ul class="list-group">
+                                <li class="list-group-item selected ">
+                                    <div class=" row">
+                                        <div class="col-md-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 px-0">
+                                            <span class="Statement-li">INSTR 809416 </span>
+                                            <span class="badge badge-primary badge-pill float-end">Now</span>
+                                            <br>
+                                            <span class="bankdata-sub"> Statement Request </span>
+                                            <div class="d-flex">
+                                                <h3 class="heading-custom">
+                            <span class="status orange"></span> 124
+                          </h3>
+                                                <h3 class="heading-custom">
+                            <span class="status yellow"></span> 241
+                          </h3>
+                                                <h3 class="heading-custom">
+                            <span class="status blue"></span> 711
+                          </h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="col-md-10 px-0">
-                                    <span class="Statement-li">INSTR 809416 </span>
-                                    <span class="badge badge-primary badge-pill float-end">Now</span>
-                                    <br>
-                                    <span class="bankdata-sub"> Statement Request </span>
-                                    <div class="d-flex">
-                                       <h3 class="heading-custom">
-                                          <span class="status orange"></span>
-                                          124
-                                       </h3>
-                                       <h3 class="heading-custom">
-                                          <span class="status yellow"></span>
-                                          241
-                                       </h3>
-                                       <h3 class="heading-custom">
-                                          <span class="status blue"></span>
-                                          711
-                                       </h3>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class=" row">
+                                        <div class="col-md-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 px-0">
+                                            <span class="Statement-li">INSTR 809416 </span>
+                                            <span class="badge badge-primary badge-pill float-end">2 min</span>
+                                            <br>
+                                            <span class="bankdata-sub"> Statement Request </span>
+                                            <div class="d-flex">
+                                                <h3 class="heading-custom">
+                            <span class="status orange"></span> 124
+                          </h3>
+                                                <h3 class="heading-custom">
+                            <span class="status yellow"></span> 241
+                          </h3>
+                                                <h3 class="heading-custom">
+                            <span class="status blue"></span> 711
+                          </h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </li>
-                           <li class="list-group-item ">
-                              <div class=" row">
-                                 <div class="col-md-2">
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                       <label class="form-check-label" for="flexCheckDefault">
-                                       </label>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-10 px-0">
-                                    <span class="Statement-li">INSTR 809416 </span>
-                                    <span class="badge badge-primary badge-pill float-end">2 min</span>
-                                    <br>
-                                    <span class="bankdata-sub"> Statement Request </span>
-                                    <div class="d-flex">
-                                       <h3 class="heading-custom">
-                                          <span class="status orange"></span>
-                                          124
-                                       </h3>
-                                       <h3 class="heading-custom">
-                                          <span class="status yellow"></span>
-                                          241
-                                       </h3>
-                                       <h3 class="heading-custom">
-                                          <span class="status blue"></span>
-                                          711
-                                       </h3>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-sm-9">
-                  <div class="card">
-                     <div class="card-body" style="height: calc(100vh - 54px);">
-                        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-                           <li class="nav-item" role="presentation">
-                              <a
-                                 class="nav-link active"
-                                 id="ex1-tab-1"
-                                 data-bs-toggle="tab"
-                                 href="#ex1-tabs-1"
-                                 role="tab"
-                                 aria-controls="ex1-tabs-1"
-                                 aria-selected="true"
-                                 >Statements</a
-                                 >
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <a
-                                 class="nav-link"
-                                 id="ex1-tab-2"
-                                 data-bs-toggle="tab"
-                                 href="#ex1-tabs-2"
-                                 role="tab"
-                                 aria-controls="ex1-tabs-2"
-                                 aria-selected="false"
-                                 >Instruction Log</a
-                                 >
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <a
-                                 class="nav-link"
-                                 id="ex1-tab-3"
-                                 data-bs-toggle="tab"
-                                 href="#ex1-tabs-3"
-                                 role="tab"
-                                 aria-controls="ex1-tabs-3"
-                                 aria-selected="false"
-                                 >System Interaction</a
-                                 >
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <a
-                                 class="nav-link"
-                                 id="ex1-tab-4"
-                                 data-bs-toggle="tab"
-                                 href="#ex1-tabs-4"
-                                 role="tab"
-                                 aria-controls="ex1-tabs-4"
-                                 aria-selected="false"
-                                 >External Communication</a
-                                 >
-                           </li>
-                           <li class="nav-item" role="presentation">
-                              <a
-                                 class="nav-link"
-                                 id="ex1-tab-5"
-                                 data-bs-toggle="tab"
-                                 href="#ex1-tabs-5"
-                                 role="tab"
-                                 aria-controls="ex1-tabs-5"
-                                 aria-selected="false"
-                                 >Issue Information</a
-                                 >
-                           </li>
-                           <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
-                              <ul class="dropdown-menu">
-                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                 <li>
-                                    <hr class="dropdown-divider">
-                                 </li>
-                                 <li><a class="dropdown-item" href="#">Separated link</a></li>
-                              </ul>
-                           </li>
-                        </ul>
-                        <div class="tab-content" id="ex1-content">
-                           <div
-                              class="tab-pane fade show active"
-                              id="ex1-tabs-1"
-                              role="tabpanel"
-                              aria-labelledby="ex1-tab-1"
-                              >
-                              <div class="accordion" id="accordionExample">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12  text-secondary">FEDWIRE</div>
-                                                   <div class="col-sm-12">89837435</div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12  text-secondary">USD 190.05</div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12  error"> REPAIR</div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Nov 29, 2023   11:24 PM</div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                       <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-                             
-                              
-
-
-
-            <button type="button" class="btn btn-primary me-1 rounded-pill ">All</button>
-            <button type="button" class="btn btn-default me-1 rounded-pill">Failed</button>
-            <button type="button" class="btn btn-default me-1 rounded-pill">Pending </button>
-            <button type="button" class="btn btn-default me-1 rounded-pill">Completed </button>
-
-
-            <div class="steps mt-4">
-               <div class="step">
-                 <div class="step-header">
-                   <div class="header">Validated & Debulked  </div>
-                   <div class="subheader">At: 08-08-2020  |  10:07:47.859        By: System </div>
-                   <div class="subheader">Instruction started DEBULKING using in memory parsing</div>
-
-                 </div>
-               
-               </div>
-               <div class="step minimized">
-                 <div class="step-header">
-                   <div class="header">This is step two!</div>
-                   <div class="subheader">The content is a little bigger!</div>
-                 </div>
-                 
-               </div>
-               <div class="step minimized">
-                 <div class="step-header">
-                   <div class="header">And finally step three!</div>
-                   <div class="subheader">Last but not the least!</div>
-                 </div>
-                 
-               </div>
-             </div>
-          
-
-
-                              
-
-                           </div>
-                           <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-                              Tab 3 content
-                           </div>
-                           <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4">
-                              Tab 4 content
-                           </div>
-                           <div class="tab-pane fade" id="ex1-tabs-5" role="tabpanel" aria-labelledby="ex1-tab-5">
-                              Tab 5 content
-                           </div>
+                                </li>
+                            </ul>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="card">
+                        <div class="card-body" style="height: calc(100vh - 54px);">
+                            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Statements</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Instruction Log</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">System Interaction</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="ex1-tab-4" data-bs-toggle="tab" href="#ex1-tabs-4" role="tab" aria-controls="ex1-tabs-4" aria-selected="false">External Communication</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">Issue Information</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="ex1-content">
+                                <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="row col-md-12">
+                              <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                <div class="form-group row mb-1">
+                                  <div class="col-sm-12  text-secondary">FEDWIRE</div>
+                                  <div class="col-sm-12">89837435</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                <div class="form-group row mb-1">
+                                  <div class="col-sm-12  text-secondary">USD 190.05</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                <div class="form-group row mb-1">
+                                  <div class="col-sm-12  error"> REPAIR</div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                <div class="form-group row mb-1">
+                                  <div class="col-sm-12 text-secondary">Nov 29, 2023 11:24 PM</div>
+                                </div>
+                              </div>
+                            </div>
+                          </button>
+                        </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
+                                                    go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                                    <button type="button" class="btn btn-primary me-1 rounded-pill ">All</button>
+                                    <button type="button" class="btn btn-default me-1 rounded-pill">Failed</button>
+                                    <button type="button" class="btn btn-default me-1 rounded-pill">Pending </button>
+                                    <button type="button" class="btn btn-default me-1 rounded-pill">Completed </button>
+                                    <div class="steps mt-4">
+                                        <div class="step">
+                                            <div class="step-header">
+                                                <div class="header">Validated & Debulked </div>
+                                                <div class="subheader">At: 08-08-2020 | 10:07:47.859 By: System </div>
+                                                <div class="subheader">Instruction started DEBULKING using in memory parsing</div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">This is step two!</div>
+                                                <div class="subheader">The content is a little bigger!</div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">And finally step three!</div>
+                                                <div class="subheader">Last but not the least!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3"> Tab 3 content </div>
+                                <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4"> Tab 4 content </div>
+                                <div class="tab-pane fade" id="ex1-tabs-5" role="tabpanel" aria-labelledby="ex1-tab-5"> Tab 5 content </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <!-- Working Area Ends -->
-      </div>
-      <!-- Footer -->
-      <nav class="navbar fixed-bottom navbar-light py-1 px-3 active d-none" id="footer">
-         <div class="small">VolPay &copy; 2023. <span class="d-none d-sm-inline-block">All rights reserved.</span></div>
-         <div class="small float-right">Version: <span class="font-weight-bold">1</span></div>
-      </nav>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-      <script type="text/javascript">
-         $(document).ready(function() {
-             $('#sidebarCollapse').on('click', function() {
-                 $('#sidebar, #main-container, #footer').toggleClass('active');
-                 $('.collapse.in').toggleClass('in');
-                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-             });
-             $('#sidebarCollapsed').on('click', function() {
-                 $('#sidebar, #main-container, #footer').toggleClass('active');
-                 $('.collapse.in').toggleClass('in');
-                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-             });
-      
-         });
-         
-         
-      </script>
-       <script>
-         $(document).ready(function() {
-         var inputWidth = $('.advance-search-dropdown').outerWidth();
-         $('#advanced-search').css('width', inputWidth);
-         // $(window).resize(function () {
-         //  inputWidth = $('.form-control').outerWidth();
-         // $('#advanced-search').css('width', inputWidth);
-         // });
-         });
-      </script>
-   </body>
+        </div>
+        <!-- Working Area Ends -->
+    </div>
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom navbar-light py-1 px-3 active d-none" id="footer">
+        <div class="small">VolPay &copy; 2023. <span class="d-none d-sm-inline-block">All rights reserved.</span>
+        </div>
+        <div class="small float-right">Version: <span class="font-weight-bold">1</span>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+              $('#sidebar, #main-container, #footer').toggleClass('active');
+              $('.collapse.in').toggleClass('in');
+              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('#sidebarCollapsed').on('click', function() {
+              $('#sidebar, #main-container, #footer').toggleClass('active');
+              $('.collapse.in').toggleClass('in');
+              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+          });
+    </script>
+</body>
+
 </html>
