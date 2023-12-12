@@ -712,7 +712,7 @@ select.form-control {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
 
 .upload-files-container {
 	background-color: #E6EBF2;
@@ -1382,5 +1382,24 @@ body {
 
 .instruction-log-div{
   overflow-y: auto;
-    height: calc(100vh - 135px);
+    height: calc(100vh - 189px);
+}
+
+.statement-list{
+    overflow-y: auto;
+    height: calc(100vh - 141px);
+}
+
+.tab-body{
+  height: calc(100vh - 244px);
+}
+
+.statement-header-info{
+border-right: 1px solid #CBCED4;
+margin-right: 15px;
+}
+
+.statement-info-4 {
+  border-right: 2px solid #fff !important;
+  margin-right: 8px;
 }
