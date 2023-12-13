@@ -1082,6 +1082,7 @@ cursor: pointer;
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
+  font-weight: 600;
 }
 .advanced-search {
   margin: 5px !important;
