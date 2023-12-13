@@ -16,85 +16,76 @@
   <body>
     <!-- Nav Bar -->
     <!-- Sidebar Minimal Holder -->
-    <nav id="sidebar_minimal" class="d-none d-md-block">
-      <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
-      <a class="navbar-brand d-flex justify-content-center me-0" href="index.html">
-        <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo">
-      </a>
+    <nav id="sidebar_minimal" class="d-none d-md-block"> <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
+      <a class="navbar-brand d-flex justify-content-center me-0" href=""> <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo"> </a>
       <ul class="list-group list-group-flush sidebar-menu-item">
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Dashboard">
-            <i class="fas fa-chart-bar"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div class="active">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne"> <i class="fas fa-chart-bar"></i> </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-walking "></i> </div>
           </div>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Instruction">
-            <i class="fas fa-clipboard"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsetwo"> <i class="fas fa-clipboard"></i> </a>
+          </div>
+          <div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-weight "></i> </div>
           </div>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Transactions">
-            <i class="fas fa-file-invoice-dollar"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsethree"> <i class="fas fa-file-invoice-dollar"></i> </a>
+          </div>
+          <div id="collapsethree" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-walking "></i> </div>
           </div>
         </li>
-        <li class="dropdown active">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Interactions">
-            <i class="far fa-handshake"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsefour"> <i class="far fa-handshake"></i> </a>
+          </div>
+          <div id="collapsefour" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-hand-point-right"></i> </div>
           </div>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="User Data">
-            <i class="far fa-user"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsefive"> <i class="far fa-user"></i> </a>
+          </div>
+          <div id="collapsefive" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-users-cog"></i> </div>
           </div>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Bank Data">
-            <i class="fas fa-university"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-university"></i> </a>
+          </div>
+          <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-money-check"></i> </div>
           </div>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Onboarding Data">
-            <i class="fas fa-database"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-database"></i> </a>
+          </div>
+          <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="fas fa-hand-point-left"></i> </div>
           </div>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Distribution Data">
-            <i class="fas fa-paper-plane"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Test Link">Test Link</a>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapseseven"> <i class="fas fa-paper-plane"></i> </a>
+          </div>
+          <div id="collapseseven" class="collapse" data-bs-parent="#accordion">
+            <div> <i class="far fa-hand-point-right"></i> </div>
           </div>
         </li>
         <li class="dropdown br-top fixed-bottom-menu">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement">
-            <i class="fas fa-user-circle"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#" title="Permission">Profile</a>
-            <a class="dropdown-item" href="#" title="Permission">Settings</a>
-            <a class="dropdown-item" href="#" title="Permission">Logout</a>
-          </div>
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement"> <i class="fas fa-user-circle"></i> </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#" title="Permission">Profile</a> <a class="dropdown-item" href="#" title="Permission">Settings</a> <a class="dropdown-item" href="#" title="Permission">Logout</a> </div>
         </li>
       </ul>
     </nav>
