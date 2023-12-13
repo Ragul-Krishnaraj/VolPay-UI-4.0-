@@ -251,7 +251,7 @@ body {
 }
 
 /* ========= Sidebar & Main Container Style ========= */
-#sidebar {
+.sidebar {
   width: 15rem;
   position: fixed;
   top: 0;
@@ -265,37 +265,37 @@ body {
   padding: 1rem 0 4rem;
   cursor: pointer !important;
 }
-#sidebar.active {
+.sidebar.active {
   margin-left: -15rem;
 }
-#sidebar .sidebar-menu-item .sidebar-collapse-btn[aria-expanded=true] {
+.sidebar .sidebar-menu-item .sidebar-collapse-btn[aria-expanded=true] {
   color: #fff;
   background: url(../img/side_nav/dropdown_open_icon.svg) top 50% right 0.75rem no-repeat;
 }
-#sidebar .sidebar-menu-item .sidebar-collapse-btn[aria-expanded=false] {
+.sidebar .sidebar-menu-item .sidebar-collapse-btn[aria-expanded=false] {
   background: url(../img/side_nav/dropdown_closed_icon.svg) top 50% right 0.75rem no-repeat;
 }
-#sidebar .sidebar-menu-item .nav-link {
+.sidebar .sidebar-menu-item .nav-link {
   padding: 0rem 1.75rem 0rem 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 40px;
 }
-#sidebar .sidebar-menu-item a {
+.sidebar .sidebar-menu-item a {
   color: rgba(255, 255, 255, 0.7) !important;
 }
-#sidebar .sidebar-menu-item a:hover {
+.sidebar .sidebar-menu-item a:hover {
   color: #fff;
 }
-#sidebar .sidebar-menu-item a.active {
+.sidebar .sidebar-menu-item a.active {
   color: #fff;
 }
-#sidebar .sidebar-menu-item .list-group-item {
+.sidebar .sidebar-menu-item .list-group-item {
   background-color: transparent;
   border: 0;
 }
-#sidebar .sidebar-menu-item .sidebar-menu-item-collapse li .nav-link {
+.sidebar .sidebar-menu-item .sidebar-menu-item-collapse li .nav-link {
   padding: 0 1.75rem 0 2.1rem;
   line-height: 36px;
   white-space: nowrap;
@@ -304,12 +304,12 @@ body {
   border-left: 3px solid transparent;
   background-color: #0E1422;
 }
-#sidebar .sidebar-menu-item .sidebar-menu-item-collapse li a.active {
+.sidebar .sidebar-menu-item .sidebar-menu-item-collapse li a.active {
   color: #fff;
   border-left-color: #BE9B5F !important;
 }
 
-#sidebar_minimal {
+.sidebar_minimal {
   width: 48px;
   position: fixed;
   top: 0;
@@ -326,34 +326,34 @@ body {
 .top_nav_sidebar_icon{
   color: whitesmoke;
 }
-#sidebar_minimal .border-bottom{
+.sidebar_minimal .border-bottom{
     border-bottom: 1px solid #f7f7f766 !important;
   }
-#sidebar_minimal.active {
+.sidebar_minimal.active {
   margin-left: -15rem;
 }
-#sidebar_minimal .sidebar-menu-item li {
+.sidebar_minimal .sidebar-menu-item li {
   text-align: center;
 }
-#sidebar_minimal .sidebar-menu-item li i {
+.sidebar_minimal .sidebar-menu-item li i {
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
   line-height: 40px;
 }
-#sidebar_minimal .sidebar-menu-item li a {
+.sidebar_minimal .sidebar-menu-item li a {
   display: block;
   text-decoration: none;
 }
-#sidebar_minimal .sidebar-menu-item li:hover i {
+.sidebar_minimal .sidebar-menu-item li:hover i {
   color: #fff;
 }
-#sidebar_minimal .sidebar-menu-item .dropdown-toggle::after {
+.sidebar_minimal .sidebar-menu-item .dropdown-toggle::after {
   display: none;
 }
-#sidebar_minimal .sidebar-menu-item .show i {
+.sidebar_minimal .sidebar-menu-item .show i {
   color: #BE9B5F !important;
 }
-#sidebar_minimal .sidebar-menu-item .dropdown-menu {
+.sidebar_minimal .sidebar-menu-item .dropdown-menu {
   margin-left: 36px;
   margin-top: -36px;
   min-width: 240px;
@@ -362,7 +362,7 @@ body {
 }
 
 /* ========= Main working Container ========= */
-#main-container {
+.main-container {
   width: calc(100% - 15rem);
   padding: 1rem 1rem 0;
   transition: all 0.3s;
@@ -371,7 +371,7 @@ body {
   right: 0;
   background: #E6EBF2;
 }
-#main-container.active {
+.main-container.active {
   width: calc(100% - 47px);
   background: #E6EBF2;
 }
@@ -459,17 +459,17 @@ body {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
-  #sidebar {
+  .sidebar {
     margin-left: -15rem;
   }
-  #sidebar.active {
+  .sidebar.active {
     margin-left: 0;
   }
 
-  #main-container {
+  .main-container {
     width: 100%;
   }
-  #main-container.active {
+  .main-container.active {
     width: calc(100% - 15rem);
   }
 
