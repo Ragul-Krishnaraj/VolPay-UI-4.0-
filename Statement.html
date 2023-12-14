@@ -90,64 +90,44 @@
       </ul>
     </nav>
     <!-- Sidebar Holder -->
-    <nav id="sidebar" class="active">
+    <nav class="active sidebar">
       <div class="d-flex flex justify-content-between align-items-center">
-        <a class="navbar-brand mx-3" href="index.html">
-          <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo">
-        </a>
-        <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i>
-      </div>
+        <a class="navbar-brand mx-3" href="index.html"> <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo"> </a> <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i> </div>
       <ul class="list-group list-group-flush sidebar-menu-item">
         <!-- Group 1 -->
         <!-- Menu Items -->
         <li>
-          <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-            <i class="fas fa-cubes mr-2"></i>
-            </i>Label 1 </a>
+          <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> <i class="fas fa-cubes mr-2"></i></i>Label 1 </a>
         </li>
         <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-1" data-parent="#sidebar">
-          <li>
-            <a class="nav-link" href="" title="">Label 2</a>
-          </li>
-          <li>
-            <a class="nav-link" href="" title="">Label 3</a>
-          </li>
+          <li> <a class="nav-link" href="" title="">Label 2</a> </li>
+          <li> <a class="nav-link" href="" title="">Label 3</a> </li>
         </ul>
         <!-- Group 1 Ends -->
         <!-- Group 2 -->
         <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</p>
         <!-- Menu Items -->
         <li>
-          <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits">
-            <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
+          <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits"> <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
         </li>
         <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-item-4" data-parent="#sidebar">
-          <li>
-            <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a>
-          </li>
-          <li>
-            <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a>
-          </li>
+          <li> <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a> </li>
+          <li> <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a> </li>
         </ul>
         <!-- Group 3 -->
         <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</p>
         <!-- Menu Items 1 -->
         <li>
-          <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard">
-            <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
+          <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard"> <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
         </li>
         <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-volpay-1" data-parent="#sidebar">
-          <li>
-            <a class="nav-link" href="#" title="Test Link">Test Link</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#" title="Test Link">Test Link</a>
-          </li>
+          <li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
+          <li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
         </ul>
       </ul>
     </nav>
     <!-- Page main-container Holder -->
-    <div id="main-container" class="active">
+    <div class="main-container active">
       <div class=" bd-highlight p-2 bg-white rounded-2">
         <div>
           <div class="row m-0 d-flex justify-content-between">
@@ -755,16 +735,16 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#sidebarCollapse').on('click', function() {
-          $('#sidebar, #main-container, #footer').toggleClass('active');
+          $('.sidebar, .main-container, #footer').toggleClass('active');
           $('.collapse.in').toggleClass('in');
           $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         });
         $('#sidebarCollapsed').on('click', function() {
-          $('#sidebar, #main-container, #footer').toggleClass('active');
+          $('.sidebar, .main-container, #footer').toggleClass('active');
           $('.collapse.in').toggleClass('in');
           $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         });
       });
-    </script>
+      </script>
   </body>
 </html>

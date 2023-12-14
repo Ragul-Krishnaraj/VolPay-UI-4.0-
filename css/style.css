@@ -1078,11 +1078,11 @@ cursor: pointer;
 
 .calenders-sub {
   display: inline-block;
-  width: 247px;
-  white-space: nowrap;
   overflow: hidden !important;
-  text-overflow: ellipsis;
   font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 0em);
 }
 .advanced-search {
   margin: 5px !important;
