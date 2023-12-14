@@ -128,6 +128,7 @@
     </nav>
     <!-- Page main-container Holder -->
     <div class="main-container active">
+      <h6>Statements</h6>
       <div class=" bd-highlight p-2 bg-white rounded-2">
         <div>
           <div class="row m-0 d-flex justify-content-between">
@@ -467,35 +468,34 @@
 
             <div class="bg-white rounded-2 p-2">
                     <div class=" row">
-                        <div class="col-md-6 d-flex">
-                      <div class="d-flex align-items-center px-4">
-                        <img src="img/icons/incoming-blue.svg" height="25" alt="Company Logo">
+                      <div class="col-md-6 d-flex">
+                        <div class="col-md-1 d-flex align-items-center px-2">
+                          <img src="img/icons/incoming-blue.svg" height="25" alt="Company Logo">
+                        </div>
+                        <div class="col-md-6 statement-header-info">
+                          <span class="bankdata-sub"> Statement Request </span>
+                          <br>
+                          <span class="Statement-li">INSTR 809416 </span>
+                        </div>
+  
+                        <div class="col-md-5">
+                          <span class="bankdata-sub"> DEBULKED </span>
+                          <br>
+                          <span class="Statement-li">
+                              <div class="d-flex">
+                                  <h3 class="heading-custom">
+                                    <span class="status orange"></span> 124
+                                  </h3>
+                                  <h3 class="heading-custom">
+                                    <span class="status yellow"></span> 241
+                                  </h3>
+                                  <h3 class="heading-custom">
+                                    <span class="status blue"></span> 711
+                                  </h3>
+                                </div>    
+                          </span>
+                        </div>
                       </div>
-                      <div class="statement-header-info">
-                        <span class="bankdata-sub"> Statement Request </span>
-                        <br>
-                        <span class="Statement-li">INSTR 809416 </span>
-                      </div>
-
-                      <div class="">
-                        <span class="bankdata-sub"> DEBULKED </span>
-                        <br>
-                        <span class="Statement-li">
-                            <div class="d-flex">
-                                <h3 class="heading-custom">
-                                  <span class="status orange"></span> 124
-                                </h3>
-                                <h3 class="heading-custom">
-                                  <span class="status yellow"></span> 241
-                                </h3>
-                                <h3 class="heading-custom">
-                                  <span class="status blue"></span> 711
-                                </h3>
-                              </div>    
-                        </span>
-                      </div>
-                    </div>
-
                     <div class="col-md-6 d-flex align-items-center justify-content-end">
                         <div class="d-flex justify-content-between">
                             <p class="mb-0 primary-color px-4 ">Dec 12, 2023   05:24 PM</p>
@@ -615,11 +615,11 @@
                   </li>
                 </ul>
                 <div class="tab-content" id="ex1-content">
-                  <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                  <div class="tab-pane fade show active statement-div" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse" aria-expanded="true" aria-controls="statement-collapse">
                             <div class="row col-md-12">
                               <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
                                 <div class="form-group row mb-1">
@@ -645,7 +645,7 @@
                             </div>
                           </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="statement-collapse" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
                             <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                           </div>

@@ -1307,13 +1307,14 @@ body {
 .header {
   user-select: none;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #18243E;
+  font-weight: 600;
 }
 
 .subheader {
   user-select: none;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.4);
+  color:#18243E;
 }
 
 .step-content {
@@ -1382,16 +1383,20 @@ body {
 
 .instruction-log-div{
   overflow-y: auto;
-    height: calc(100vh - 189px);
+    height: calc(100vh - 380px);
 }
 
-.statement-list{
+.statement-div{
     overflow-y: auto;
-    height: calc(100vh - 141px);
+    height: calc(100vh - 380px);
+}
+.statement-list{
+  overflow-y: auto;
+  max-height: calc(100vh - 192px);
 }
 
 .tab-body{
-  height: calc(100vh - 244px);
+  height: calc(100vh - 300px);
 }
 
 .statement-header-info{
