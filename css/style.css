@@ -1053,11 +1053,11 @@ cursor: pointer;
 
 .bankdata-sub {
   display: inline-block;
-  width: 200px;
-  white-space: nowrap;
   overflow: hidden !important;
+  font-weight: 600;
   text-overflow: ellipsis;
-  font-size: 12px;
+  white-space: nowrap;
+  max-width: calc(100% - 0em);
 }
 
 .bankdata-li-div{
