@@ -1399,6 +1399,19 @@ body {
   height: calc(100vh - 300px);
 }
 
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px)    {
+
+.tab-body {
+  height: calc(100vh - 303px) !important;
+} 
+.statement-list {
+  overflow-y: auto;
+  max-height: calc(100vh - 173px) !important;
+}
+
+}
 .statement-header-info{
 border-right: 1px solid #CBCED4;
 margin-right: 15px;
