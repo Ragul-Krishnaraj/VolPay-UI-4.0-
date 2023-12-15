@@ -1363,9 +1363,6 @@ cursor: pointer;
   vertical-align: bottom;
   color: #18243E !important;
 }
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-  background: #f5f5f5 !important;
-}
 
 
 tbody tr:hover {
