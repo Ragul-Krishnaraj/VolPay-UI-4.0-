@@ -1364,6 +1364,11 @@ cursor: pointer;
   color: #18243E !important;
 }
 
+.td-download {
+  color: #003B7C;
+  font-size: 12px;
+}
+
 
 tbody tr:hover {
 background: #E6EBF2 !important;
