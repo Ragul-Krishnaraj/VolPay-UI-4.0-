@@ -865,9 +865,17 @@ h6 {
   box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: #E6EBF2 !important;
+
+
+.accordion-button:not(.collapse) {
+  background-color: #ffffff !important;
 }
+
+.accordion-body {
+  background: #E6EBF2 !important;
+}
+
+
 
 /* Search bar  */
 .input-group-btn {
@@ -1333,6 +1341,7 @@ margin-right: 15px;
 .statement-info-4 {
   border-right: 2px solid #fff !important;
   margin-right: 8px;
+  text-align: center;
 }
 
 .bank-data-heading{
@@ -1375,3 +1384,29 @@ background: #E6EBF2 !important;
  
 }
 
+/* expand view */
+.container-expand{
+width:100%;
+padding: 1rem 1rem 0;
+transition: all 0.3s;
+position: absolute;
+top: 0;
+right: 0;
+background: #E6EBF2;
+}
+
+.bg-blue{
+  background: #003B7C;
+}
+
+.page-link {
+  color: #18243E !important;
+}
+
+.accordian-border{
+  border: 2px solid #003B7C;
+}
+
+.bg-light {
+  background-color: #F3F3F5 !important;
+}
