@@ -1,221 +1,415 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" /> <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> <!-- Line Awesome Font Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Expand-View-Statement</title>
-</head>
-
-<body>
-    <div class="container-expand h-100">
-        <div class="mt-2">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+      <!-- Line Awesome Font Library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <title>Expand-View-Statement</title>
+   </head>
+   <body>
+      <div class="container-expand h-100">
+         <div class="mt-2">
             <div class="row">
-                <div class="col-sm-12 col-lg-12">
-                    <div class="bg-white rounded-2 p-2">
-                        <div class=" row">
-                            <div class="col-md-6 d-flex">
-                                <div class="col-md-1 d-flex align-items-center px-2"> <img src="img/icons/incoming-blue.svg" height="25" alt="Company Logo"> </div>
-                                <div class="col-md-4 statement-header-info"> <span class="bankdata-sub"> Statement Request </span> <br> <span class="Statement-li">INSTR 809416 </span> </div>
-                                <div class="col-md-5"> <span class="bankdata-sub"> DEBULKED </span> <br> <span class="Statement-li">
-                                        <div class="d-flex">
-                                            <h3 class="heading-custom"> <span class="status orange"></span> 124 </h3>
-                                            <h3 class="heading-custom"> <span class="status yellow"></span> 241 </h3>
-                                            <h3 class="heading-custom"> <span class="status blue"></span> 711 </h3>
-                                        </div>
-                                    </span> </div>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center justify-content-end">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-0 primary-color px-4 ">Dec 27, 2023 05:24 PM</p>
-                                    <div>
-                                        <div class="text-right-sm" role="tablist">
-                                            <div class="dropdown"> <a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i class="fas fa-ellipsis-v " aria-hidden="true"></i> </a>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="las la-book-open mr-2"></i>Open</a> <a class="dropdown-item" href="#"><i class="lar la-edit mr-2"></i>Edit</a> <a class="dropdown-item" href="#"><i class="lar la-trash-alt mr-2"></i>Delete</a> </div>
-                                            </div>
-                                        </div>
+               <div class="col-sm-12 col-lg-12">
+                  <div class="bg-white rounded-2 p-2">
+                     <div class=" row">
+                        <div class="col-md-6 d-flex">
+                           <div class="col-md-1 d-flex align-items-center px-2"> <img src="img/icons/incoming-blue.svg" height="25" alt="Company Logo"> </div>
+                           <div class="col-md-4 statement-header-info"> <span class="bankdata-sub"> Statement Request </span> <br> <span class="Statement-li">INSTR 809416 </span> </div>
+                           <div class="col-md-5">
+                              <span class="bankdata-sub"> DEBULKED </span> <br> 
+                              <span class="Statement-li">
+                                 <div class="d-flex">
+                                    <h3 class="heading-custom"> <span class="status orange"></span> 124 </h3>
+                                    <h3 class="heading-custom"> <span class="status yellow"></span> 241 </h3>
+                                    <h3 class="heading-custom"> <span class="status blue"></span> 711 </h3>
+                                 </div>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-end">
+                           <div class="d-flex justify-content-between">
+                              <p class="mb-0 primary-color px-4 ">Dec 27, 2023 05:24 PM</p>
+                              <div>
+                                 <div class="text-right-sm" role="tablist">
+                                    <div class="dropdown">
+                                       <a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i class="fas fa-ellipsis-v " aria-hidden="true"></i> </a>
+                                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="las la-book-open mr-2"></i>Open</a> <a class="dropdown-item" href="#"><i class="lar la-edit mr-2"></i>Edit</a> <a class="dropdown-item" href="#"><i class="lar la-trash-alt mr-2"></i>Delete</a> </div>
                                     </div>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="bg-light  p-2">
-                        <div class=" row">
-                            <div class="col-md-6 d-flex">
-                                <div class="col-md-4  statement-info-4"> <span class="bankdata-sub"> Original Instruction Reference </span> <br> <span>155450167 </span> </div>
-                                <div class="col-md-4  statement-info-4 "> <span class="bankdata-sub"> Related Reference </span> <br> <span>???? </span> </div>
-                                <div class="col-md-4  statement-info-4 "> <span class="bankdata-sub"> Party Service Association Code </span> <br> <span>Fin_STATEMENT_FinacleResponse Msg_Tr </span> </div>
-                            </div>
-                            <div class="col-md-6 d-flex">
-                                <div class="col-md-4  statement-info-4"> <span class="bankdata-sub"> Sender </span> <br> <span>??? </span> </div>
-                                <div class="col-md-4  statement-info-4 "> <span class="bankdata-sub"> Transport </span> <br> <span>FILE - Multi_Fin_Stat....xml </span> </div>
-                                <div class="col-md-4  "> <span class="bankdata-sub"> Input Reference </span> <br> <span>??? </span> </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="bg-light  p-2">
+                     <div class=" row">
+                        <div class="col-md-6 d-flex">
+                           <div class="col-md-4  statement-info-4"> <span class="bankdata-sub"> Original Instruction Reference </span> <br> <span>155450167 </span> </div>
+                           <div class="col-md-4  statement-info-4 "> <span class="bankdata-sub"> Related Reference </span> <br> <span>???? </span> </div>
+                           <div class="col-md-4  statement-info-4 "> <span class="bankdata-sub"> Party Service Association Code </span> <br> <span>Fin_STATEMENT_FinacleResponse Msg_Tr </span> </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-12 p-2 text-center"> <span><img src="img/icons/circle-outline.svg" height="15" alt="Company Logo"> Status successfully changed to debulked..! </span> </div>
-                </div>
+                        <div class="col-md-6 d-flex">
+                           <div class="col-md-4  statement-info-4"> <span class="bankdata-sub"> Sender </span> <br> <span>??? </span> </div>
+                           <div class="col-md-4  statement-info-4 "> <span class="bankdata-sub"> Transport </span> <br> <span>FILE - Multi_Fin_Stat....xml </span> </div>
+                           <div class="col-md-4  "> <span class="bankdata-sub"> Input Reference </span> <br> <span>??? </span> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-12 p-2 text-center"> <span><img src="img/icons/circle-outline.svg" height="15" alt="Company Logo"> Status successfully changed to debulked..! </span> </div>
+               </div>
             </div>
             <div class="card">
-                <div class="card-body tab-body h-100">
-                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-                        <li class="nav-item" role="presentation"> <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Statements(24)</a> </li>
-                        <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Instruction Log</a> </li>
-                        <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">System Interaction</a> </li>
-                        <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-4" data-bs-toggle="tab" href="#ex1-tabs-4" role="tab" aria-controls="ex1-tabs-4" aria-selected="false">External Communication</a> </li>
-                        <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">Issue Information</a> </li>
-                    </ul>
-                    <div class="tab-content" id="ex1-content">
-                        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-                            <div class="accordion accordian-border" id="accordionExample">
-                                <div class="bg-blue">
-                                    <div class=" row">
-                                        <div class="col-md-6 d-flex align-items-center">
-                                            <div class="col-md-1 d-flex  px-2"> <img src="img/icons/batch.svg" height="20" alt="Company Logo"> </div>
-                                            <div class="col-md-3 statement-header-info"> <span class="bankdata-sub text-white"> B00921978787843 </span> </div>
-                                            <div class="col-md-5">
-                                                <nav aria-label="Page navigation example">
-                                                    <ul class="pagination mt-1 mb-1">
-                                                        <li class="page-item"> <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i> PREV</a> </li>
-                                                        <li class="page-item"><a class="page-link" href="#"><span> <i class="fas fa-search "></i> </span></a></li>
-                                                        <li class="page-item"> <a class="page-link" href="#">NEXT <i class="fas fa-chevron-right"></i></a> </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 d-flex align-items-center justify-content-end">
-                                            <div class="d-flex justify-content-between">
-                                                <p class="mb-0  px-4 text-white ">Dec 27, 2023 05:24 PM</p>
-                                                <div>
-                                                    <div class="text-right-sm " role="tablist">
-                                                        <div class="dropdown"> <a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i class="fas fa-ellipsis-v text-white" aria-hidden="true"></i> </a>
-                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="las la-book-open mr-2"></i>Open</a> <a class="dropdown-item" href="#"><i class="lar la-edit mr-2"></i>Edit</a> <a class="dropdown-item" href="#"><i class="lar la-trash-alt mr-2"></i>Delete</a> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+               <div class="card-body tab-body h-100">
+                  <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                     <li class="nav-item" role="presentation"> <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Statements(24)</a> </li>
+                     <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Instruction Log</a> </li>
+                     <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">System Interaction</a> </li>
+                     <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-4" data-bs-toggle="tab" href="#ex1-tabs-4" role="tab" aria-controls="ex1-tabs-4" aria-selected="false">External Communication</a> </li>
+                     <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">Issue Information</a> </li>
+                  </ul>
+                  <div class="tab-content" id="ex1-content">
+                     <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                        <div class="accordion accordian-border" id="accordionExample">
+                           <div class="bg-blue">
+                              <div class=" row">
+                                 <div class="col-md-6 d-flex align-items-center">
+                                    <div class="col-md-1 d-flex  px-2"> <img src="img/icons/batch.svg" height="20" alt="Company Logo"> </div>
+                                    <div class="col-md-3 statement-header-info"> <span class="bankdata-sub text-white"> B00921978787843 </span> </div>
+                                    <div class="col-md-5">
+                                       <nav aria-label="Page navigation example">
+                                          <ul class="pagination mt-1 mb-1">
+                                             <li class="page-item"> <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i> PREV</a> </li>
+                                             <li class="page-item"><a class="page-link" href="#"><span> <i class="fas fa-search "></i> </span></a></li>
+                                             <li class="page-item"> <a class="page-link" href="#">NEXT <i class="fas fa-chevron-right"></i></a> </li>
+                                          </ul>
+                                       </nav>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="bg-light col-md-12 d-flex">
-                                        <div class="col-md-3  statement-info-4"> <span class="bankdata-sub"> Original Instruction Reference </span> <br> <span>155450167 </span> </div>
-                                        <div class="col-md-3  statement-info-4 "> <span class="bankdata-sub"> Related Reference </span> <br> <span>???? </span> </div>
-                                        <div class="col-md-3  statement-info-4 "> <span class="bankdata-sub"> Party Service Association Code </span> <br> <span>Fin_STATEMENT_FinacleResponse Msg_Tr </span> </div>
-                                        <div class="col-md-3 "> <span class="bankdata-sub"> Sender </span> <br> <span>??? </span> </div>
+                                 </div>
+                                 <div class="col-md-6 d-flex align-items-center justify-content-end">
+                                    <div class="d-flex justify-content-between">
+                                       <p class="mb-0  px-4 text-white ">Dec 27, 2023 05:24 PM</p>
+                                       <div>
+                                          <div class="text-right-sm " role="tablist">
+                                             <div class="dropdown">
+                                                <a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i class="fas fa-ellipsis-v text-white" aria-hidden="true"></i> </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="las la-book-open mr-2"></i>Open</a> <a class="dropdown-item" href="#"><i class="lar la-edit mr-2"></i>Edit</a> <a class="dropdown-item" href="#"><i class="lar la-trash-alt mr-2"></i>Delete</a> </div>
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class=" tab-body h-100">
-                                        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-                                            <li class="nav-item" role="presentation"> <a class="nav-link " id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Batch Info</a> </li>
-                                            <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Batch Log</a> </li>
-                                            <li class="nav-item" role="presentation"> <a class="nav-link active" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">Statements Details</a> </li>
-                                            <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-4" data-bs-toggle="tab" href="#ex1-tabs-4" role="tab" aria-controls="ex1-tabs-4" aria-selected="false">Instruction Log</a> </li>
-                                            <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">System Interaction</a> </li>
-                                            <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">External Communications</a> </li>
-                                            <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">Issue Information</a> </li>
-                                        </ul>
-                                        <div class="tab-content" id="ex1-content">
-                                            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1"> 
-                                                
-                                                
-
-
-                                                <div class=" row p-2">
-                                                    <div class="col-md-6 d-flex align-items-center">
-                                                        
-                                                        <div class="col-md-0 statement-header-info"> 
-                                                            
-                                                            <div class="form-check  d-flex align-items-center">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                  
-                                                                </label>
-                                                              </div>
-            
-
-                                                        </div>
-                                                        <div class="col-md-11 "> 
-
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                View - All (394)
-                                                            </button>
-                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                            </ul>
-                                                          </div>
-                                                          </div>
-
-                                                    </div>
-                                                    <div class="col-md-6 d-flex align-items-center justify-content-end">
-                                                        <div class="text-right-sm" role="tablist">
-                                                            <span class=" icon-color f-14">
-                                                            <i class="fas fa-filter"></i>
-                                                            </span>
-                                                            <span class="icon-color f-14 ">
-                                                            <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-                                                            </span>
-                                                         </div>
-                                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <div class="bg-light col-md-12 d-flex">
+                                 <div class="col-md-3  statement-info-4"> <span class="bankdata-sub"> Original Instruction Reference </span> <br> <span>155450167 </span> </div>
+                                 <div class="col-md-3  statement-info-4 "> <span class="bankdata-sub"> Related Reference </span> <br> <span>???? </span> </div>
+                                 <div class="col-md-3  statement-info-4 "> <span class="bankdata-sub"> Party Service Association Code </span> <br> <span>Fin_STATEMENT_FinacleResponse Msg_Tr </span> </div>
+                                 <div class="col-md-3 "> <span class="bankdata-sub"> Sender </span> <br> <span>??? </span> </div>
+                              </div>
+                           </div>
+                           <div>
+                              <div class=" tab-body h-100">
+                                 <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                                    <li class="nav-item" role="presentation"> <a class="nav-link " id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Batch Info</a> </li>
+                                    <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Batch Log</a> </li>
+                                    <li class="nav-item" role="presentation"> <a class="nav-link active" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">Statements Details</a> </li>
+                                    <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-4" data-bs-toggle="tab" href="#ex1-tabs-4" role="tab" aria-controls="ex1-tabs-4" aria-selected="false">Instruction Log</a> </li>
+                                    <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">System Interaction</a> </li>
+                                    <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">External Communications</a> </li>
+                                    <li class="nav-item" role="presentation"> <a class="nav-link" id="ex1-tab-5" data-bs-toggle="tab" href="#ex1-tabs-5" role="tab" aria-controls="ex1-tabs-5" aria-selected="false">Issue Information</a> </li>
+                                 </ul>
+                                 <div class="tab-content" id="ex1-content">
+                                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                                       <div class=" row p-2">
+                                          <div class="col-md-6 d-flex align-items-center">
+                                             <div class="col-md-0 statement-header-info">
+                                                <div class="form-check  d-flex align-items-center">
+                                                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                   <label class="form-check-label" for="flexCheckDefault">
+                                                   </label>
                                                 </div>
-
-
-
-                                            <!-- <div class=" d-inline-flex p-2">
-
-
-                                                <div class="form-check statement-header-info d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      
-                                                    </label>
-                                                  </div>
-
-
+                                             </div>
+                                             <div class="col-md-11 ">
                                                 <div class="dropdown">
-                                                    <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        View - All (394)
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                   <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   View - All (394)
+                                                   </button>
+                                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                                       <li><a class="dropdown-item" href="#">Action</a></li>
                                                       <li><a class="dropdown-item" href="#">Another action</a></li>
                                                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                    </ul>
-                                                  </div>
-                                                  <div class="text-right-sm d-flex align-items-center" role="tablist">
-                                                    <span class=" icon-color f-14">
-                                                    <i class="fas fa-filter"></i>
-                                                    </span>
-                                                    <span class="icon-color f-14 ">
-                                                    <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-                                                    </span>
-                                                 </div>
-
-                                                </div> -->
-                                            
-                                            </div>
-                                        </div>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6 d-flex align-items-center justify-content-end">
+                                             <div class="text-right-sm" role="tablist">
+                                                <span class=" icon-color f-14">
+                                                <i class="fas fa-filter"></i>
+                                                </span>
+                                                <span class="icon-color f-14 ">
+                                                <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="p-2">
+                                          <div class="accordion" id="accordionExample">
+                                             <div class="accordion-item">
+                                                <div class="p-2">
+                                                   <div class=" row">
+                                                      <div class="col-md-6 d-flex align-items-center">
+                                                         <div class="col-md-1 d-flex  px-2">
+                                                            <div class="form-check  d-flex align-items-center">
+                                                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                               <label class="form-check-label" for="flexCheckDefault">
+                                                               </label>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-md-3 statement-header-info">
+                                                            <div class="col-md-6 col-lg-3 d-inline-flex align-items-center ">
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-12  text-secondary">FEDWIRE</div>
+                                                                  <div class="col-sm-12">89837435</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-md-3 statement-header-info">
+                                                            <div class="col-md-6 col-lg-3 d-inline-flex align-items-center ">
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-12  text-secondary">FEDWIRE</div>
+                                                               </div>
+                                                               <br>
+                                                               </br>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                            <div class="form-group row mb-1">
+                                                               <div class="col-sm-12  error"> Failed</div>
+                                                            </div>
+                                                            <br></br>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-md-6 d-flex align-items-center justify-content-end">
+                                                         <div class="d-flex justify-content-between">
+                                                            <p class="mb-0  px-4  ">Dec 27, 2023 05:24 PM</p>
+                                                            <div>
+                                                               <div class="text-right-sm " role="tablist">
+                                                                  <div class="dropdown">
+                                                                     <a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i class="fas fa-ellipsis-v " aria-hidden="true"></i> </a>
+                                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="las la-book-open mr-2"></i>Open</a> <a class="dropdown-item" href="#"><i class="lar la-edit mr-2"></i>Edit</a> <a class="dropdown-item" href="#"><i class="lar la-trash-alt mr-2"></i>Delete</a> </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="bg-light  p-2">
+                                                <div class=" row">
+                                                   <div class="col-md-6 d-flex">
+                                                      <div class="col-md-6  statement-info-4"> <span class="bankdata-sub"> Account </span> <br> <span>FINDDASMBCJPJTJPY03</span> </div>
+                                                      <div class="col-md-6  statement-info-4 "> <span class="bankdata-sub"> Account Name </span> <br> <span>SMBC JPY1</span> </div>
+                                                   </div>
+                                                   <div class="col-md-6 d-flex">
+                                                      <div class="col-md-6  statement-info-4 "> <span class="bankdata-sub"> Reference for Account Owner </span> <br> <span>mov1334501672686 </span> </div>
+                                                      <div class="col-md-6  statement-info-4"> <span class="bankdata-sub"> Reversal Indicator </span> <br> <span>??? </span> </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="card">
+                                                <div class="card-body">
+                                                   <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                                                      <li class="nav-item" role="presentation">
+                                                         <a class="nav-link active" id="ex1-tab-10" data-bs-toggle="tab" href="#ex1-tabs-10" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Statement Summary</a>
+                                                      </li>
+                                                   </ul>
+                                                   <div class="tab-content" id="ex1-tab-10">
+                                                      <div class="tab-pane fade show active" id="ex1-tab-10" role="tabpanel" aria-labelledby="ex1-tab-1">
+                                                         <div class="row mb-2">
+                                                            <div class="col-md-6 col-lg-6 bg-light-blue">
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-12 text-center f-32"> USD 3654.21 </div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Booking Date </div>
+                                                                  <div class="col-sm-7">2024-01-01  04:05:00 </div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Value Date </div>
+                                                                  <div class="col-sm-7">2024-01-01  04:05:00</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">DR/CR Indicator </div>
+                                                                  <div class="col-sm-7">CRDT</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Account Name  </div>
+                                                                  <div class="col-sm-7">SMBC JPY1</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Account Type  </div>
+                                                                  <div class="col-sm-7">DDA</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Original Reference ID  </div>
+                                                                  <div class="col-sm-7">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-3">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Original Payment Message ID  </div>
+                                                                  <div class="col-sm-7">???</div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6">
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Bank Reference ID  </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Reference ID   </div>
+                                                                  <div class="col-sm-7 text-blue">VP20123114482810</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Distribution ID   </div>
+                                                                  <div class="col-sm-7 text-blue">da2fe406-c453-43</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Recon Payment Message ID  </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Reference For Account Owner   </div>
+                                                                  <div class="col-sm-7 text-blue">mov1554501672686</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Reversal Indicator  </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Detailed Status Info   </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Copy Duplicate IND   </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Account Servicing Institution   </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Linked Message Function   </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                               <div class="form-group row mb-1">
+                                                                  <div class="col-sm-5 text-right-sm text-secondary">Statement Matching Status   </div>
+                                                                  <div class="col-sm-7 text-blue">???</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="accordion" id="accordionExample">
+                                                            <div class="accordion-item">
+                                                               <h2 class="accordion-header" id="headingOne">
+                                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse" aria-expanded="false" aria-controls="statement-collapse">
+                                                                     <div class="row col-md-12">
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                                           <div class="col-lg-2 d-flex align-items-center px-2"> <img src="img/icons/assignment-red.svg" height="25" alt="Company Logo"> </div>
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12  text-secondary">FEDWIRE</div>
+                                                                              <div class="col-sm-12">89837435</div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12  text-secondary">USD 190.05</div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12  error"> REPAIR</div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12 text-secondary">Nov 29, 2023 11:24 PM</div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </button>
+                                                               </h2>
+                                                               <div id="statement-collapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                                                  <div class="accordion-body">
+                                                                     <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="accordion mt-2" id="accordionExample">
+                                                            <div class="accordion-item">
+                                                               <h2 class="accordion-header" id="headingOne">
+                                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapsed" aria-expanded="false" aria-controls="statement-collapsed">
+                                                                     <div class="row col-md-12">
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                                           <div class="col-lg-2 d-flex align-items-center px-2"> <img src="img/icons/assignment-red.svg" height="25" alt="Company Logo"> </div>
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12  text-secondary">FEDWIRE</div>
+                                                                              <div class="col-sm-12">89837435</div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12  text-secondary">USD 190.05</div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center border-right ">
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12  error"> REPAIR</div>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                                           <div class="form-group row mb-1">
+                                                                              <div class="col-sm-12 text-secondary">Nov 29, 2023 11:24 PM</div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </button>
+                                                               </h2>
+                                                               <div id="statement-collapsed" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                                                  <div class="accordion-body">
+                                                                     <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-</body>
-
+         </div>
+      </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+   </body>
 </html>
