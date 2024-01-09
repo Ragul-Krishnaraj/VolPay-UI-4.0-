@@ -1376,6 +1376,8 @@ background: #E6EBF2 !important;
  
 }
 
+
+
 /* expand view */
 .container-expand{
 width:100%;
@@ -1589,3 +1591,34 @@ transform: rotate(-45deg);
   margin-right:0.5em;
   margin-top: -4px;
 }
+
+
+.Distribution-data-div {
+  overflow-y: auto;
+  height: calc(100vh - 220px);
+}
+
+.Distribution-data-calc-height{
+  height: calc(100vh - 225px);
+  min-height: 526px !important;
+  overflow-y: auto;
+}
+
+.table .success{
+  background: #C8E6C9;
+}
+
+.table .alert{
+  background: #FACDCF;
+}
+
+
+
+.Distribution-data .sidebar-collapse-btn[aria-expanded=true] {
+  color: #fff;
+  background: url(../img/side_nav/dropdown_open_icon1.svg) top 50% right 0.75rem no-repeat !important;
+}
+.Distribution-data .sidebar-collapse-btn[aria-expanded=false] {
+  background: url(../img/side_nav/dropdown_closed_icon1.svg) top 50% right 0.75rem no-repeat;
+}
+
