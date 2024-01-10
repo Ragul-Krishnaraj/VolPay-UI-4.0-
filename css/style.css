@@ -1602,6 +1602,7 @@ transform: rotate(-45deg);
   height: calc(100vh - 225px);
   min-height: 526px !important;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .table .success{
@@ -1622,3 +1623,32 @@ transform: rotate(-45deg);
   background: url(../img/side_nav/dropdown_closed_icon1.svg) top 50% right 0.75rem no-repeat;
 }
 
+
+
+.Distribution-data .list-group .nav-link {
+  padding: 0 1.75rem 0 3.1rem;
+  line-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.Distribution-data .nav-link {
+font-weight: 500 !important;
+}
+
+
+
+
+.f-16{
+  font-size: 16px;
+}
+
+.Distribution-data .nav-link i{
+  color:#747C8B;
+}
+
+.Distribution-data li.active {
+  background: #E6EBF2;
+}
