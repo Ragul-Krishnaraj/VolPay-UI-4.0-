@@ -1639,8 +1639,6 @@ font-weight: 500 !important;
 }
 
 
-
-
 .f-16{
   font-size: 16px;
 }
@@ -1652,3 +1650,29 @@ font-weight: 500 !important;
 .Distribution-data li.active {
   background: #E6EBF2;
 }
+
+
+/* Sub-Node */
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+  }
+  rect.node {
+  fill: #18243E;
+  border:5px solid red !important;
+  }
+  .node text {
+  font: 12px sans-serif;
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: bold;
+  fill: white;
+  cursor: pointer;
+
+  }
+  .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+  }
