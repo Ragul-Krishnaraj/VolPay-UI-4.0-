@@ -1681,3 +1681,32 @@ a.nav-link.active {
   stroke-width: 2px;
   }
 
+   .initiate-transaction .calc-height {
+    height: calc(100vh - 225px) !important;
+    min-height: 487px !important;
+    overflow-y: auto !important;
+}
+.f-12 {
+  font-size: 12px;
+}
+.card-text {
+  color: #747C8B;
+}
+
+.card-footer.text-muted {
+  background: white !important;
+  font-size: 12px;
+}
+
+.initiate-transaction .card-body{
+  cursor: pointer;
+}
+
+.h-150{
+  height: 150px;
+}
+
+.card-bg{
+  background: #E6EBF2 !important;
+  border: 1px solid #003B7C !important;
+}
