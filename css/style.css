@@ -1623,19 +1623,20 @@ transform: rotate(-45deg);
   background: url(../img/side_nav/dropdown_closed_icon1.svg) top 50% right 0.75rem no-repeat;
 }
 
-
-
 .Distribution-data .list-group .nav-link {
   padding: 0 1.75rem 0 3.1rem;
   line-height: 36px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer !important;
 }
 
 
 .Distribution-data .nav-link {
 font-weight: 500 !important;
+cursor: pointer !important;
+
 }
 
 
@@ -1651,6 +1652,9 @@ font-weight: 500 !important;
   background: #E6EBF2;
 }
 
+a.nav-link.active {
+  color: #003B7C !important;
+}
 
 /* Sub-Node */
 .node circle {
@@ -1676,3 +1680,4 @@ font-weight: 500 !important;
   stroke: #ccc;
   stroke-width: 2px;
   }
+
