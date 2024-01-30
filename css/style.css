@@ -1710,3 +1710,11 @@ a.nav-link.active {
   background: #E6EBF2 !important;
   border: 1px solid #003B7C !important;
 }
+.primary{
+  color:#747C8B;
+}
+
+.required-field::after {
+  content: "*";
+  color: red;
+}
