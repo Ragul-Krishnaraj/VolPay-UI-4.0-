@@ -1748,8 +1748,6 @@ a.nav-link.active {
 font-weight: 500 !important;
 cursor: pointer !important;
 color: #003B7C !important;
-
-
 }
 
 
@@ -1759,4 +1757,15 @@ color: #003B7C !important;
 
 .summary li.active {
   background: #E6EBF2;
+}
+
+/* modal */
+.modal-body .text-secondary {
+  color: #18243E !important;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.transaction-modal .modal-content {
+  background: #E6EBF2 !important;
 }

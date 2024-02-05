@@ -938,9 +938,36 @@
                   </div>
                </div>
                <div class="col-md-12 card-footer d-flex flex-row-reverse mt-1 z-index">
-                  <button type="button" class="btn btn-primary rounded-pill">Save & Submit</button>
+                  <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#savemodal" >Save & Submit</button>
                   <button type="button" class="btn btn-default me-3 rounded-pill">Save</button>
                   <button type="button" class="btn btn-default me-3 rounded-pill">Cancel</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade transaction-modal" id="savemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+               <div class="modal-header border-0">
+                  <h5 class="modal-title" id="exampleModalLabel">Would you like to save this transaction as a template?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body pt-0 pb-0">
+                  <div class="col-md-12">
+                     <div class="card">
+                        <div class="card-body">
+                           <div class="form-group row mb-1">
+                              <div class="col-sm-12 text-secondary">If yes, select fields that you would like to save from below</div>
+                              <span class="primary-color f-12"> Listed below is the summary of the payment transaction  </span> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer col-md-12  d-flex border-0">
+                  <button type="button" class="btn btn-default rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-default rounded-pill">Save</button>
+                  <button type="button" class="btn btn-primary rounded-pill" data-bs-dismiss="modal">Save &amp; Submit</button>
                </div>
             </div>
          </div>
