@@ -1052,8 +1052,8 @@ padding: 0.375rem 2.75rem !important;
 /* checkbox custom */
 
 .form-check-input:checked {
-  background-color: #18243E !important;
-  border-color: #18243E !important;
+  background-color: #003B7C !important;
+  border-color: #003B7C !important;
 }
 
 .statement-li {
@@ -1721,8 +1721,6 @@ a.nav-link.active {
 
 /* Summary  */
 
-
-
 .summary .sidebar-collapse-btn[aria-expanded=true] {
   color: #fff;
   background: url(../img/side_nav/dropdown_open_icon1.svg) top 50% left 0.75rem no-repeat !important;
@@ -1768,4 +1766,59 @@ color: #003B7C !important;
 
 .transaction-modal .modal-content {
   background: #E6EBF2 !important;
+}
+
+/* transaction modal template */
+
+
+/* Summary  */
+
+.template-summary .sidebar-collapse-btn[aria-expanded=true] {
+  color: #fff;
+  background: url(../img/side_nav/dropdown_open_icon1.svg) top 50% left 0.75rem no-repeat !important;
+  padding-left: 35px;
+}
+.template-summary .sidebar-collapse-btn[aria-expanded=false] {
+  background: url(../img/side_nav/dropdown_closed_icon1.svg) top 50% left 0.75rem no-repeat;
+  padding-left: 35px;
+}
+
+.template-summary .list-group .nav-link {
+  padding:0 1.75rem 0 1.1rem;
+  line-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer !important;
+  color: #747C8B !important;
+}
+
+
+.template-summary .nav-link {
+font-weight: 500 !important;
+cursor: pointer !important;
+color: #003B7C !important;
+}
+
+
+.template-summary .nav-link i{
+  color:#747C8B;
+}
+
+.template-summary li.active {
+  background: #E6EBF2;
+}
+
+.label-text{
+  padding: 0 0 0 10px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer !important;
+  color: #747C8B !important;
+}
+
+.transaction-modal{
+  overflow-y: auto;
+  height: calc(100vh - 220px);
 }

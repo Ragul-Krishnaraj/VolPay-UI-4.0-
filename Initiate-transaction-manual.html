@@ -1,990 +1,702 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" />
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/style.css" type="text/css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-      <!-- Line Awesome Font Library -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css">
-      <title> Initiate Transaction Manual </title>
-   </head>
-   <body>
-      <!-- Nav Bar -->
-      <!-- Sidebar Minimal Holder -->
-      <nav class="d-none d-md-block sidebar_minimal">
-         <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
-         <a class="navbar-brand d-flex justify-content-center me-0" href=""> <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo"> </a>
-         <ul class="list-group list-group-flush sidebar-menu-item">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" /> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> <!-- Line Awesome Font Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css">
+    <title> Initiate Transaction Manual </title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <!-- Sidebar Minimal Holder -->
+    <nav class="d-none d-md-block sidebar_minimal"> <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i> <a class="navbar-brand d-flex justify-content-center me-0" href=""> <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo"> </a>
+        <ul class="list-group list-group-flush sidebar-menu-item">
             <li>
-               <div class="active">
-                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne"> <i class="fas fa-chart-bar"></i> </a>
-               </div>
-               <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-walking "></i> </div>
-               </div>
+                <div class="active"> <a class="btn" data-bs-toggle="collapse" href="#collapseOne"> <i class="fas fa-chart-bar"></i> </a> </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-walking "></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapsetwo"> <i class="fas fa-clipboard"></i> </a>
-               </div>
-               <div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-weight "></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapsetwo"> <i class="fas fa-clipboard"></i> </a> </div>
+                <div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-weight "></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapsethree"> <i class="fas fa-file-invoice-dollar"></i> </a>
-               </div>
-               <div id="collapsethree" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-walking "></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapsethree"> <i class="fas fa-file-invoice-dollar"></i> </a> </div>
+                <div id="collapsethree" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-walking "></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapsefour"> <i class="far fa-handshake"></i> </a>
-               </div>
-               <div id="collapsefour" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-hand-point-right"></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapsefour"> <i class="far fa-handshake"></i> </a> </div>
+                <div id="collapsefour" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-hand-point-right"></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapsefive"> <i class="far fa-user"></i> </a>
-               </div>
-               <div id="collapsefive" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-users-cog"></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapsefive"> <i class="far fa-user"></i> </a> </div>
+                <div id="collapsefive" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-users-cog"></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-university"></i> </a>
-               </div>
-               <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-money-check"></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-university"></i> </a> </div>
+                <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-money-check"></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-database"></i> </a>
-               </div>
-               <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="fas fa-hand-point-left"></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-database"></i> </a> </div>
+                <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="fas fa-hand-point-left"></i> </div>
+                </div>
             </li>
             <li>
-               <div>
-                  <a class="btn" data-bs-toggle="collapse" href="#collapseseven"> <i class="fas fa-paper-plane"></i> </a>
-               </div>
-               <div id="collapseseven" class="collapse" data-bs-parent="#accordion">
-                  <div> <i class="far fa-hand-point-right"></i> </div>
-               </div>
+                <div> <a class="btn" data-bs-toggle="collapse" href="#collapseseven"> <i class="fas fa-paper-plane"></i> </a> </div>
+                <div id="collapseseven" class="collapse" data-bs-parent="#accordion">
+                    <div> <i class="far fa-hand-point-right"></i> </div>
+                </div>
             </li>
-            <li class="dropdown br-top fixed-bottom-menu">
-               <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement"> <i class="fas fa-user-circle"></i> </a>
-               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#" title="Permission">Profile</a> <a class="dropdown-item" href="#" title="Permission">Settings</a> <a class="dropdown-item" href="#" title="Permission">Logout</a> </div>
+            <li class="dropdown br-top fixed-bottom-menu"> <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement"> <i class="fas fa-user-circle"></i> </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#" title="Permission">Profile</a> <a class="dropdown-item" href="#" title="Permission">Settings</a> <a class="dropdown-item" href="#" title="Permission">Logout</a> </div>
             </li>
-         </ul>
-      </nav>
-      <!-- Sidebar Holder -->
-      <nav class="active sidebar">
-         <div class="d-flex flex justify-content-between align-items-center">
-            <a class="navbar-brand mx-3" href="index.html"> <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo"> </a> <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i>
-         </div>
-         <ul class="list-group list-group-flush sidebar-menu-item">
+        </ul>
+    </nav> <!-- Sidebar Holder -->
+    <nav class="active sidebar">
+        <div class="d-flex flex justify-content-between align-items-center"> <a class="navbar-brand mx-3" href="index.html"> <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo"> </a> <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i> </div>
+        <ul class="list-group list-group-flush sidebar-menu-item">
             <!-- Group 1 -->
             <!-- Menu Items -->
-            <li>
-               <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> <i class="fas fa-cubes mr-2"></i></i>Label 1 </a>
-            </li>
+            <li> <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> <i class="fas fa-cubes mr-2"></i></i>Label 1 </a> </li>
             <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-1" data-parent="#sidebar">
-               <li> <a class="nav-link" href="" title="">Label 2</a> </li>
-               <li> <a class="nav-link" href="" title="">Label 3</a> </li>
-            </ul>
-            <!-- Group 1 Ends -->
+                <li> <a class="nav-link" href="" title="">Label 2</a> </li>
+                <li> <a class="nav-link" href="" title="">Label 3</a> </li>
+            </ul> <!-- Group 1 Ends -->
             <!-- Group 2 -->
-            <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</p>
-            <!-- Menu Items -->
-            <li>
-               <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits"> <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
-            </li>
+            <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</p> <!-- Menu Items -->
+            <li> <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits"> <i class="fas fa-file-alt mr-2"></i>Sample Pages </a> </li>
             <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-item-4" data-parent="#sidebar">
-               <li> <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a> </li>
-               <li> <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a> </li>
-            </ul>
-            <!-- Group 3 -->
-            <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</p>
-            <!-- Menu Items 1 -->
-            <li>
-               <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard"> <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
-            </li>
+                <li> <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a> </li>
+                <li> <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a> </li>
+            </ul> <!-- Group 3 -->
+            <p class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</p> <!-- Menu Items 1 -->
+            <li> <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard"> <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a> </li>
             <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-volpay-1" data-parent="#sidebar">
-               <li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
-               <li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
+                <li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
+                <li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
             </ul>
-         </ul>
-      </nav>
-      <!-- Page main-container Holder -->
-      <div class="active main-container h-100">
-         <h6>Initiate Transaction</h6>
-         <div class="d-flex bd-highlight p-2 bg-white rounded-2">
-            <button type="button" class="btn btn-default me-3 rounded-pill">By File Upload</button>
-            <button type="button" class="btn btn-primary me-3 rounded-pill">By Manual Entry</button>
-         </div>
-         <div class="mt-2">
+        </ul>
+    </nav> <!-- Page main-container Holder -->
+    <div class="active main-container h-100">
+        <h6>Initiate Transaction</h6>
+        <div class="d-flex bd-highlight p-2 bg-white rounded-2"> <button type="button" class="btn btn-default me-3 rounded-pill">By File Upload</button> <button type="button" class="btn btn-primary me-3 rounded-pill">By Manual Entry</button> </div>
+        <div class="mt-2">
             <div class="row initiate-transaction">
-               <div class="col-sm-3 statement-li ">
-                  <div class="card">
-                     <div class="card-body calc-height">
-                        <div class="row">
-                           <div class="Distribution-data col-md-12">
-                              <div>
-                                 <div class="step active">
-                                    <div class="step-header">
-                                       <div class="header">Select Template </div>
+                <div class="col-sm-3 statement-li ">
+                    <div class="card">
+                        <div class="card-body calc-height">
+                            <div class="row">
+                                <div class="Distribution-data col-md-12">
+                                    <div>
+                                        <div class="step active">
+                                            <div class="step-header">
+                                                <div class="header">Select Template </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">Transaction Details </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">Ordering Customer </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">Beneficiary Details </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">Beneficiary Bank Details </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">Remittance Details </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized">
+                                            <div class="step-header">
+                                                <div class="header">Intermediately Bank Details </div>
+                                            </div>
+                                        </div>
+                                        <div class="step minimized one">
+                                            <div class="step-header">
+                                                <div class="header">Summary </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="step minimized">
-                                    <div class="step-header">
-                                       <div class="header">Transaction Details </div>
-                                    </div>
-                                 </div>
-                                 <div class="step minimized">
-                                    <div class="step-header">
-                                       <div class="header">Ordering Customer </div>
-                                    </div>
-                                 </div>
-                                 <div class="step minimized">
-                                    <div class="step-header">
-                                       <div class="header">Beneficiary Details </div>
-                                    </div>
-                                 </div>
-                                 <div class="step minimized">
-                                    <div class="step-header">
-                                       <div class="header">Beneficiary Bank Details </div>
-                                    </div>
-                                 </div>
-                                 <div class="step minimized">
-                                    <div class="step-header">
-                                       <div class="header">Remittance Details </div>
-                                    </div>
-                                 </div>
-                                 <div class="step minimized">
-                                    <div class="step-header">
-                                       <div class="header">Intermediately Bank Details </div>
-                                    </div>
-                                 </div>
-                                 <div class="step minimized one">
-                                    <div class="step-header">
-                                       <div class="header">Summary </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-9">
-                  <div class="card">
-                     <div class="card-body calc-height">
-                        <div class="row">
-                           <p class="mb-0 font-weight-normal">
-                              <span>
-                              Click on the left panel or scroll to move between sections </span>
-                           </p>
-                           <div class="col-md-12 mt-2 Distribution-data-collpase">
-                              <div class="accordion mt-2" id="accordionExample7">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingseven">
-                                       <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse7" aria-expanded="true" aria-controls="statement-collapse7">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Select Template</div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="card">
+                        <div class="card-body calc-height">
+                            <div class="row">
+                                <p class="mb-0 font-weight-normal"> <span> Click on the left panel or scroll to move between sections </span> </p>
+                                <div class="col-md-12 mt-2 Distribution-data-collpase">
+                                    <div class="accordion mt-2" id="accordionExample7">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingseven"> <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse7" aria-expanded="true" aria-controls="statement-collapse7">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Select Template</div>
+                                                            </div>
+                                                        </div> <span class="primary-color f-12"> Start the transaction by selecting a template from below. The fields that would get pre-filled from the template can be reviewed and modified before submission </span>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse7" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample7">
+                                                <div class="accordion-body bg-white">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div> <button type="button" class="btn btn-primary rounded-pill">All</button> <button type="button" class="btn btn-default rounded-pill">Created by me</button> <button type="button" class="btn btn-default rounded-pill">Shared with me</button> <button type="button" class="btn btn-default rounded-pill">Pinned</button> </div>
+                                                        <div>
+                                                            <div class="text-right-sm d-flex justify-content-between" role="tablist"> <span class="icon-color f-14"> <i class="fas fa-search " aria-hidden="true"></i> </span> <span class="icon-color f-14"> <i class="fas fa-filter" aria-hidden="true"></i> </span> <span class="icon-color f-14"> <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i> </span> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card text-center mt-3 card-bg"> <span class="text-start icon-color f-14 p-0 mx-2"> <i class="fas fa-map-pin"></i> </span>
+                                                                <div class="card-body h-150 p-5">
+                                                                    <h6 class="card-title">None</h6>
+                                                                    <p class="card-text">Start transaction from scratch </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card text-center mt-3  "> <span class="text-start icon-color f-14 p-0 mx-2"> <i class="fas fa-map-pin"></i> </span>
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Lorem Ipsum</h6>
+                                                                    <p class="card-text">This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
+                                                                </div>
+                                                                <div class="card-footer text-muted d-flex justify-content-between p-1">
+                                                                    <div><span class="border-end px-1">Created by: John Smith</span> </div>
+                                                                    <div> <span>Created on: 016-Jan-2024</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card text-center mt-3 "> <span class="text-start icon-color f-14 p-0 mx-2"> <i class="fas fa-map-pin"></i> </span>
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Lorem Ipsum</h6>
+                                                                    <p class="card-text">This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
+                                                                </div>
+                                                                <div class="card-footer text-muted d-flex justify-content-between p-1">
+                                                                    <div><span class="border-end px-1">Created by: John Smith</span> </div>
+                                                                    <div> <span>Created on: 016-Jan-2024</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card text-center mt-3 "> <span class="text-start icon-color f-14 p-0 mx-2"> <i class="fas fa-map-pin"></i> </span>
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Lorem Ipsum</h6>
+                                                                    <p class="card-text">This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
+                                                                </div>
+                                                                <div class="card-footer text-muted d-flex justify-content-between p-1">
+                                                                    <div><span class="border-end px-1">Created by: John Smith</span> </div>
+                                                                    <div> <span>Created on: 016-Jan-2024</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card text-center mt-3 "> <span class="text-start icon-color f-14 p-0 mx-2"> <i class="fas fa-map-pin"></i> </span>
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Lorem Ipsum</h6>
+                                                                    <p class="card-text">This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
+                                                                </div>
+                                                                <div class="card-footer text-muted d-flex justify-content-between p-1">
+                                                                    <div><span class="border-end px-1">Created by: John Smith</span> </div>
+                                                                    <div> <span>Created on: 016-Jan-2024</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card text-center mt-3 "> <span class="text-start icon-color f-14 p-0 mx-2"> <i class="fas fa-map-pin"></i> </span>
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Lorem Ipsum</h6>
+                                                                    <p class="card-text">This book is a treatise on the theory of ethics, very popular during the Renaissance. </p>
+                                                                </div>
+                                                                <div class="card-footer text-muted d-flex justify-content-between p-1">
+                                                                    <div><span class="border-end px-1">Created by: John Smith</span> </div>
+                                                                    <div> <span>Created on: 016-Jan-2024</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                             </div>
-                                             <span class="primary-color f-12"> Start the transaction by selecting a template from below. The fields that would get pre-filled from the template can be reviewed and modified
-                                             before submission  </span>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse7" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample7">
-                                       <div class="accordion-body bg-white">
-                                          <div class="d-flex justify-content-between">
-                                             <div>
-                                                <button type="button" class="btn btn-primary rounded-pill">All</button>
-                                                <button type="button" class="btn btn-default rounded-pill">Created by me</button>
-                                                <button type="button" class="btn btn-default rounded-pill">Shared with me</button>
-                                                <button type="button" class="btn btn-default rounded-pill">Pinned</button>
-                                             </div>
-                                             <div>
-                                                <div class="text-right-sm d-flex justify-content-between" role="tablist"> <span class="icon-color f-14">
-                                                   <i class="fas fa-search " aria-hidden="true"></i>
-                                                   </span> <span class="icon-color f-14">
-                                                   <i class="fas fa-filter" aria-hidden="true"></i>
-                                                   </span> <span class="icon-color f-14">
-                                                   <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-                                                   </span> 
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-4">
-                                                <div class="card text-center mt-3 card-bg">
-                                                   <span class="text-start icon-color f-14 p-0 mx-2">
-                                                   <i class="fas fa-map-pin"></i>
-                                                   </span>
-                                                   <div class="card-body h-150 p-5">
-                                                      <h6 class="card-title">None</h6>
-                                                      <p class="card-text">Start transaction from scratch
-                                                      </p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                <div class="card text-center mt-3  ">
-                                                   <span class="text-start icon-color f-14 p-0 mx-2">
-                                                   <i class="fas fa-map-pin"></i>
-                                                   </span>
-                                                   <div class="card-body">
-                                                      <h6 class="card-title">Lorem Ipsum</h6>
-                                                      <p class="card-text">This book is a treatise on the theory of ethics, very popular 
-                                                         during the Renaissance.
-                                                      </p>
-                                                   </div>
-                                                   <div class="card-footer text-muted d-flex justify-content-between p-1">
-                                                      <div><span class="border-end px-1">Created by: John Smith</span>  </div>
-                                                      <div> <span>Created on: 016-Jan-2024</span></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                <div class="card text-center mt-3 ">
-                                                   <span class="text-start icon-color f-14 p-0 mx-2">
-                                                   <i class="fas fa-map-pin"></i>
-                                                   </span>
-                                                   <div class="card-body">
-                                                      <h6 class="card-title">Lorem Ipsum</h6>
-                                                      <p class="card-text">This book is a treatise on the theory of ethics, very popular 
-                                                         during the Renaissance.
-                                                      </p>
-                                                   </div>
-                                                   <div class="card-footer text-muted d-flex justify-content-between p-1">
-                                                      <div><span class="border-end px-1">Created by: John Smith</span>  </div>
-                                                      <div> <span>Created on: 016-Jan-2024</span></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                <div class="card text-center mt-3 ">
-                                                   <span class="text-start icon-color f-14 p-0 mx-2">
-                                                   <i class="fas fa-map-pin"></i>
-                                                   </span>
-                                                   <div class="card-body">
-                                                      <h6 class="card-title">Lorem Ipsum</h6>
-                                                      <p class="card-text">This book is a treatise on the theory of ethics, very popular 
-                                                         during the Renaissance.
-                                                      </p>
-                                                   </div>
-                                                   <div class="card-footer text-muted d-flex justify-content-between p-1">
-                                                      <div><span class="border-end px-1">Created by: John Smith</span>  </div>
-                                                      <div> <span>Created on: 016-Jan-2024</span></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                <div class="card text-center mt-3 ">
-                                                   <span class="text-start icon-color f-14 p-0 mx-2">
-                                                   <i class="fas fa-map-pin"></i>
-                                                   </span>
-                                                   <div class="card-body">
-                                                      <h6 class="card-title">Lorem Ipsum</h6>
-                                                      <p class="card-text">This book is a treatise on the theory of ethics, very popular 
-                                                         during the Renaissance.
-                                                      </p>
-                                                   </div>
-                                                   <div class="card-footer text-muted d-flex justify-content-between p-1">
-                                                      <div><span class="border-end px-1">Created by: John Smith</span>  </div>
-                                                      <div> <span>Created on: 016-Jan-2024</span></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                <div class="card text-center mt-3 ">
-                                                   <span class="text-start icon-color f-14 p-0 mx-2">
-                                                   <i class="fas fa-map-pin"></i>
-                                                   </span>
-                                                   <div class="card-body">
-                                                      <h6 class="card-title">Lorem Ipsum</h6>
-                                                      <p class="card-text">This book is a treatise on the theory of ethics, very popular 
-                                                         during the Renaissance.
-                                                      </p>
-                                                   </div>
-                                                   <div class="card-footer text-muted d-flex justify-content-between p-1">
-                                                      <div><span class="border-end px-1">Created by: John Smith</span>  </div>
-                                                      <div> <span>Created on: 016-Jan-2024</span></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="accordion mt-2" id="accordionExample1">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse" aria-expanded="false" aria-controls="statement-collapse">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Transaction Details</div>
+                                    <div class="accordion mt-2" id="accordionExample1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse" aria-expanded="false" aria-controls="statement-collapse">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Transaction Details</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1"> <span class="primary-color f-12 p-2"> Fill out the form below to enter all the transaction data </span>
+                                                <div class=" accordion-body bg-white">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label text-end"> Party Name</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option>Vodafone</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleFormControlSelect2" class="col-sm-3 col-form-label text-end required-field"> Service</label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect2">
+                                                                    <option>Payment Service - Payment</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleFormControlSelect3" class="col-sm-3 col-form-label text-end required-field"> Message Type </label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect3">
+                                                                    <option>Customer Credit Transfer</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleFormControlSelect4" class="col-sm-3 col-form-label text-end required-field"> Party Service Association Code</label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect4">
+                                                                    <option>VODAFONE PAYMENT MT103RTP (VODAFONE) - Payment</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field"> Branch </label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option>United Kingdom Branch</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field"> Product Supported</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option>SWIFT</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center"> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field"> Value Date</label>
+                                                            <div class="form-group  col-sm-4 mb-0">
+                                                                <div class="input-group date" id="datePicker"> <input type="text" class="form-control" name="date" value=""> <span class="input-group-addon"> </span> </div>
+                                                            </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Debtor Customer Proprietary Code (Optional) </label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Country </label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field"> Payment Currency, Amount</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option>Payment Currency</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="form-group col-sm-4 mb-0"> <input type="paymentcode" class="form-control" id="method" aria-describedby="method" placeholder="Amount"> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> End to End ID (Optional)</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Charge Code (Optional)</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
-                                       <span class="primary-color f-12 p-2"> Fill out the form below to enter all the transaction data  </span>
-                                       <div class=" accordion-body bg-white">
-                                          <div class="col-md-12">
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label text-end">
-                                                Party Name</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option>Vodafone</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">    
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleFormControlSelect2" class="col-sm-3 col-form-label text-end required-field">
-                                                Service</label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect2">
-                                                      <option>Payment Service - Payment</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">     
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleFormControlSelect3" class="col-sm-3 col-form-label text-end required-field" >
-                                                Message Type </label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect3">
-                                                      <option>Customer Credit Transfer</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">    
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleFormControlSelect4" class="col-sm-3 col-form-label text-end required-field">
-                                                Party Service Association Code</label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect4">
-                                                      <option>VODAFONE PAYMENT MT103RTP (VODAFONE) - Payment</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">     
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field">
-                                                Branch </label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option>United Kingdom Branch</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">     
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field">
-                                                Product Supported</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option>SWIFT</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">    
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field">
-                                                Value Date</label>
-                                                <div class="form-group  col-sm-4 mb-0">
-                                                   <div class="input-group date" id="datePicker">
-                                                      <input type="text" class="form-control" name="date" value="">
-                                                      <span class="input-group-addon">
-                                                      </span>
-                                                   </div>
-                                                </div>
-                                                <div class="col-sm-1">    
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Debtor Customer Proprietary Code
-                                                (Optional) </label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">     
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Country </label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">     
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field">
-                                                Payment Currency, Amount</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option>Payment Currency</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <input type="paymentcode" class="form-control" id="method" aria-describedby="method" placeholder="Amount">
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                End to End ID (Optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Charge Code (Optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="accordion mt-2" id="accordionExample2">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingtwo">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse2" aria-expanded="false" aria-controls="statement-collapse">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Ordering Customer</div>
+                                    <div class="accordion mt-2" id="accordionExample2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingtwo"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse2" aria-expanded="false" aria-controls="statement-collapse">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Ordering Customer</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2"> <span class="primary-color f-12 p-2"> Fill out the form below to enter all the transaction data </span>
+                                                <div class=" accordion-body bg-white">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Client ID (optional)</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option> </option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Name (optional)</label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Address Line 1 (optional) </label>
+                                                            <div class="form-group col-sm-4 mb-0">
+                                                                <div class="input-group"> <input type="text" class="form-control" name="address" value=""> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Address Line 2 (optional)</label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option> </option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> City/State (optional)</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option>City</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option>State</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Postal Code (optional)</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option> </option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center"> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Country</label>
+                                                            <div class="form-group  col-sm-4 mb-0">
+                                                                <div class="input-group date" id=""> <input type="text" class="form-control" name="country" value=""> <span class="input-group-addon"> </span> </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center"> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> </label>
+                                                            <div class="form-group  col-sm-4 mb-0"> <span class="primary-color f-12"> ACCOUNT INFORMATION </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field"> Account Number </label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Account Currency (optional) </label>
+                                                            <div class="form-group col-sm-8 mb-0"> <select class="form-select " id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Account Name (optional)</label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option> </option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                            <div class="form-group col-sm-4 mb-0"> <input type="paymentcode" class="form-control" id="method" aria-describedby="method" placeholder="Amount"> </div>
+                                                        </div>
+                                                        <div class="form-group row d-flex align-items-center  "> <label for="exampleSelect1" class="col-sm-3 col-form-label text-end"> Account Domiciled Country (Optional) </label>
+                                                            <div class="form-group col-sm-4 mb-0"> <select class="form-select" id="exampleFormControlSelect1">
+                                                                    <option></option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                    <option>Meridian Bank (MerBan)</option>
+                                                                </select> </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                       <span class="primary-color f-12 p-2"> Fill out the form below to enter all the transaction data  </span>
-                                       <div class=" accordion-body bg-white">
-                                          <div class="col-md-12">
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Client ID (optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option> </option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">    
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Name (optional)</label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end" >
-                                                Address Line 1 (optional) </label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <div class="input-group">
-                                                      <input type="text" class="form-control" name="address" value="">
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Address Line 2 (optional)</label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option> </option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                City/State (optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option>City</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option>State</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Postal Code (optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option> </option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Country</label>
-                                                <div class="form-group  col-sm-4 mb-0">
-                                                   <div class="input-group date" id="">
-                                                      <input type="text" class="form-control" name="country" value="">
-                                                      <span class="input-group-addon">
-                                                      </span>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                </label>
-                                                <div class="form-group  col-sm-4 mb-0">
-                                                   <span class="primary-color f-12"> ACCOUNT INFORMATION  </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end required-field">
-                                                Account Number </label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="col-sm-1">     
-                                                   <span>
-                                                   <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i>
-                                                   </span>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Account Currency (optional) </label>
-                                                <div class="form-group col-sm-8 mb-0">
-                                                   <select class="form-select " id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Account Name (optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option> </option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <input type="paymentcode" class="form-control" id="method" aria-describedby="method" placeholder="Amount">
-                                                </div>
-                                             </div>
-                                             <div class="form-group row d-flex align-items-center  ">
-                                                <label for="exampleSelect1" class="col-sm-3 col-form-label text-end">
-                                                Account Domiciled Country
-                                                (Optional)</label>
-                                                <div class="form-group col-sm-4 mb-0">
-                                                   <select class="form-select" id="exampleFormControlSelect1">
-                                                      <option></option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                      <option>Meridian Bank (MerBan)</option>
-                                                   </select>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="accordion mt-2" id="accordionExample3">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingthree">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse3" aria-expanded="false" aria-controls="statement-collapse3">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Beneficiary Details</div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
-                                       <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                                          appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                                          go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                       </div>
+                                    <div class="accordion mt-2" id="accordionExample3">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingthree"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse3" aria-expanded="false" aria-controls="statement-collapse3">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Beneficiary Details</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
+                                                <div class="accordion-body"> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="accordion mt-2" id="accordionExample4">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingfour">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse4" aria-expanded="false" aria-controls="statement-collapse4">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Beneficiary Bank Details </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample4">
-                                       <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                                          appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                                          go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                       </div>
+                                    <div class="accordion mt-2" id="accordionExample4">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingfour"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse4" aria-expanded="false" aria-controls="statement-collapse4">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Beneficiary Bank Details </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample4">
+                                                <div class="accordion-body"> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="accordion mt-2" id="accordionExample5">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingfive">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse5" aria-expanded="false" aria-controls="statement-collapse5">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Remittance Details</div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse5" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample5">
-                                       <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                                          appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                                          go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                       </div>
+                                    <div class="accordion mt-2" id="accordionExample5">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingfive"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse5" aria-expanded="false" aria-controls="statement-collapse5">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Remittance Details</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse5" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample5">
+                                                <div class="accordion-body"> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="accordion mt-2" id="accordionExample6">
-                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingsix">
-                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse6" aria-expanded="false" aria-controls="statement-collapse6">
-                                          <div class="row col-md-12">
-                                             <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
-                                                <div class="form-group row mb-1">
-                                                   <div class="col-sm-12 text-secondary">Summary</div>
+                                    <div class="accordion mt-2" id="accordionExample6">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingsix"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statement-collapse6" aria-expanded="false" aria-controls="statement-collapse6">
+                                                    <div class="row col-md-12">
+                                                        <div class="col-md-6 col-lg-3 d-inline-flex align-items-center">
+                                                            <div class="form-group row mb-1">
+                                                                <div class="col-sm-12 text-secondary">Summary</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </button> </h2>
+                                            <div id="statement-collapse6" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample6"> <span class="primary-color f-12 p-2"> Listed below is the summary of the transaction </span>
+                                                <div class="accordion-body bg-white">
+                                                    <div class="summary">
+                                                        <nav>
+                                                            <ul class="list-unstyled">
+                                                                <li> <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-2" role="button" aria-expanded="true" aria-controls="collapseExample" title="VolOB"> Payment Transaction </a> </li>
+                                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse show" id="sidebar-item-2" data-parent="#sidebar">
+                                                                    <li class=""> <a class="nav-link " href="" title="">Party Name - Vodafone</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Service - Payment Service - Payment</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Message Type - Customer Credit Transfer</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Party Service Association Code - VODAFONE PAYMENT MT103RTP (VODAFONE)</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Branch - United kingdom Branch</a> </li>
+                                                                    <li> <a class="nav-link" href="" title=""> Product Supported - SWIFT</a> </li>
+                                                                    <li> <a class="nav-link" href="" title=""> Value-Date- Feb 05 2024</a> </li>
+                                                                </ul>
+                                                                <li> <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-3" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> Ordering Customer </a> </li>
+                                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-3" data-parent="#sidebar3">
+                                                                    <li> <a class="nav-link" href="" title="">Label 2</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Label 3</a> </li>
+                                                                </ul>
+                                                                <li> <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> Beneficiary Details </a> </li>
+                                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-4" data-parent="#sidebar4">
+                                                                    <li> <a class="nav-link" href="" title="">Endpoint Groups</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Memberships</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Operating Time Ranges</a> </li>
+                                                                </ul>
+                                                                <li> <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-5" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> Beneficiary Bank Details </a> </li>
+                                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-5" data-parent="#sidebar5">
+                                                                    <li> <a class="nav-link" href="" title="">Label 2</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Label 3</a> </li>
+                                                                </ul>
+                                                                <li> <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-6" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> Remittance Details </a> </li>
+                                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-6" data-parent="#sidebar6">
+                                                                    <li> <a class="nav-link" href="" title="">Label 2</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Label 3</a> </li>
+                                                                </ul>
+                                                                <li> <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-7" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> Intermediately Bank Details </a> </li>
+                                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-7" data-parent="#sidebar7">
+                                                                    <li> <a class="nav-link" href="" title="">Label 2</a> </li>
+                                                                    <li> <a class="nav-link" href="" title="">Label 3</a> </li>
+                                                                </ul>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                       </button>
-                                    </h2>
-                                    <div id="statement-collapse6" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample6">
-                                       <span class="primary-color f-12 p-2"> Listed below is the summary of the transaction </span>
-                                       <div class="accordion-body bg-white">
-                                          <div class="summary">
-                                             <nav>
-                                                <ul class="list-unstyled">
-                                                   <li>
-                                                      <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-2" role="button" aria-expanded="true" aria-controls="collapseExample" title="VolOB">
-                                                      Payment Transaction </a>
-                                                   </li>
-                                                   <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse show" id="sidebar-item-2" data-parent="#sidebar">
-                                                      <li class="">
-                                                         <a class="nav-link " href="" title="">Party Name - Vodafone</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Service - Payment Service - Payment</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Message Type - Customer Credit Transfer</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Party Service Association Code - VODAFONE PAYMENT MT103RTP (VODAFONE)</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Branch - United kingdom Branch</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">    Product Supported - SWIFT</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">    Value-Date- Feb 05 2024</a>
-                                                      </li>
-                                                   </ul>
-                                                   <li>
-                                                      <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-3" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-                                                      Ordering Customer </a>
-                                                   </li>
-                                                   <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-3" data-parent="#sidebar3">
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 2</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 3</a>
-                                                      </li>
-                                                   </ul>
-                                                   <li>
-                                                      <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-                                                      Beneficiary Details </a>
-                                                   </li>
-                                                   <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-4" data-parent="#sidebar4">
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Endpoint Groups</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Memberships</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Operating Time Ranges</a>
-                                                      </li>
-                                                   </ul>
-                                                   <li>
-                                                      <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-5" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-                                                      Beneficiary Bank Details </a>
-                                                   </li>
-                                                   <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-5" data-parent="#sidebar5">
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 2</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 3</a>
-                                                      </li>
-                                                   </ul>
-                                                   <li>
-                                                      <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-6" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-                                                      Remittance Details </a>
-                                                   </li>
-                                                   <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-6" data-parent="#sidebar6">
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 2</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 3</a>
-                                                      </li>
-                                                   </ul>
-                                                   <li>
-                                                      <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-7" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
-                                                      Intermediately Bank Details </a>
-                                                   </li>
-                                                   <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-7" data-parent="#sidebar7">
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 2</a>
-                                                      </li>
-                                                      <li>
-                                                         <a class="nav-link" href="" title="">Label 3</a>
-                                                      </li>
-                                                   </ul>
-                                                </ul>
-                                             </nav>
-                                          </div>
-                                       </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-12 card-footer d-flex flex-row-reverse mt-1 z-index">
-                  <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#savemodal" >Save & Submit</button>
-                  <button type="button" class="btn btn-default me-3 rounded-pill">Save</button>
-                  <button type="button" class="btn btn-default me-3 rounded-pill">Cancel</button>
-               </div>
+                    </div>
+                </div>
+                <div class="col-md-12 card-footer d-flex flex-row-reverse mt-1 z-index"> <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#savemodal">Save & Submit</button> <button type="button" class="btn btn-default me-3 rounded-pill">Save</button> <button type="button" class="btn btn-default me-3 rounded-pill">Cancel</button> </div>
             </div>
-         </div>
-      </div>
-      <div class="modal fade transaction-modal" id="savemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-xl">
+        </div>
+    </div>
+    <div class="modal fade transaction-modal" id="savemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
-               <div class="modal-header border-0">
-                  <h5 class="modal-title" id="exampleModalLabel">Would you like to save this transaction as a template?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body pt-0 pb-0">
-                  <div class="col-md-12">
-                     <div class="card">
-                        <div class="card-body">
-                           <div class="form-group row mb-1">
-                              <div class="col-sm-12 text-secondary">If yes, select fields that you would like to save from below</div>
-                              <span class="primary-color f-12"> Listed below is the summary of the payment transaction  </span> 
-                           </div>
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Would you like to save this transaction as a template?</h5> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0 pb-0">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body transaction-modal">
+                                <div class="form-group row mb-1">
+                                    <div class="col-sm-12 text-secondary">If yes, select fields that you would like to save from below</div> <span class="primary-color f-12"> Listed below is the summary of the payment transaction </span>
+                                    <div class="template-summary">
+                                        <nav>
+                                            <ul class="list-unstyled">
+                                                <li> <label class="nav-link sidebar-collapse-btn d-inline-flex align-items-center" data-bs-toggle="collapse" href="#sidebar-item-2" role="button" aria-expanded="true" aria-controls="collapseExample" title="Payment Transaction"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="nav-link label-text">Payment Transaction</span> </label> </li>
+                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse show" id="sidebar-item-2" data-parent="#sidebar">
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text">Party Name - Vodafone</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text">Service - Payment Service - Payment</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text">Message Type - Customer Credit Transfer</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text">Party Service Association Code - VODAFONE PAYMENT MT103RTP (VODAFONE)</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text">Branch - United kingdom Branch</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text"> Product Supported - SWIFT</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox" checked> <span class="label-text">Value-Date- Feb 05 2024</span> </label> </li>
+                                                </ul>
+                                                <li> <label class="nav-link sidebar-collapse-btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sidebar-item-3" role="button" aria-expanded="false" aria-controls="collapseExample" title="Payment Transaction"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked=""> <span class="nav-link label-text">Ordering Customer</span> </label> </li>
+                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-3" data-parent="#sidebar3">
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text"> Product Supported - SWIFT</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text">Value-Date- Feb 05 2024</span> </label> </li>
+                                                </ul>
+                                                <li> <label class="nav-link sidebar-collapse-btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Payment Transaction"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked=""> <span class="nav-link label-text">Beneficiary Details</span> </label> </li>
+                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-4" data-parent="#sidebar4">
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text"> Product Supported - SWIFT</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text">Value-Date- Feb 05 2024</span> </label> </li>
+                                                </ul>
+                                                <li> <label class="nav-link sidebar-collapse-btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sidebar-item-5" role="button" aria-expanded="false" aria-controls="collapseExample" title="Payment Transaction"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked=""> <span class="nav-link label-text">Beneficiary Bank Details</span> </label> </li>
+                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-5" data-parent="#sidebar5">
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text"> Product Supported - SWIFT</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text">Value-Date- Feb 05 2024</span> </label> </li>
+                                                </ul>
+                                                <li> <label class="nav-link sidebar-collapse-btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sidebar-item-6" role="button" aria-expanded="false" aria-controls="collapseExample" title="Payment Transaction"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked=""> <span class="nav-link label-text">Remittance Details</span> </label> </li>
+                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-6" data-parent="#sidebar6">
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text"> Product Supported - SWIFT</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text">Value-Date- Feb 05 2024</span> </label> </li>
+                                                </ul>
+                                                <li> <label class="nav-link sidebar-collapse-btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sidebar-item-7" role="button" aria-expanded="false" aria-controls="collapseExample" title="Payment Transaction"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked=""> <span class="nav-link label-text">Intermediately Bank Details</span> </label> </li>
+                                                <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-7" data-parent="#sidebar7">
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text"> Product Supported - SWIFT</span> </label> </li>
+                                                    <li> <label class="d-inline-flex px-5"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" type="checkbox"> <span class="label-text">Value-Date- Feb 05 2024</span> </label> </li>
+                                                </ul>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="modal-footer col-md-12  d-flex border-0">
-                  <button type="button" class="btn btn-default rounded-pill" data-bs-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-default rounded-pill">Save</button>
-                  <button type="button" class="btn btn-primary rounded-pill" data-bs-dismiss="modal">Save &amp; Submit</button>
-               </div>
+                    </div>
+                </div>
+                <div class="modal-footer col-md-12  d-flex border-0"> <button type="button" class="btn btn-default rounded-pill" data-bs-dismiss="modal">Cancel</button> <button type="button" class="btn btn-default rounded-pill">Save</button> <button type="button" class="btn btn-primary rounded-pill" data-bs-dismiss="modal">Save &amp; Submit</button> </div>
             </div>
-         </div>
-      </div>
-      <nav class="navbar fixed-bottom navbar-light py-1 px-3 active d-none" id="footer">
-         <div class="small">VolPay &copy; 2023. <span class="d-none d-sm-inline-block">All rights reserved.</span>
-         </div>
-         <div class="small float-right">Version: <span class="font-weight-bold">1</span>
-         </div>
-      </nav>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function() {
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom navbar-light py-1 px-3 active d-none" id="footer">
+        <div class="small">VolPay &copy; 2023. <span class="d-none d-sm-inline-block">All rights reserved.</span> </div>
+        <div class="small float-right">Version: <span class="font-weight-bold">1</span> </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
             $('#sidebarCollapse').on('click', function() {
               $('.sidebar, .main-container, #footer').toggleClass('active');
               $('.collapse.in').toggleClass('in');
@@ -997,9 +709,9 @@
             });
             $("[data-toggle=tooltip]").tooltip()
           });
-      </script>
-      <script>
-         var date = new Date();
+    </script>
+    <script>
+        var date = new Date();
          var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
          
          var optSimple = {
@@ -1030,6 +742,7 @@
          orientation: 'top right'
          });
          $( '#datepicker1, #simple, #datePicker' ).datepicker( 'setDate', today );
-      </script>
-   </body>
+    </script>
+</body>
+
 </html>
