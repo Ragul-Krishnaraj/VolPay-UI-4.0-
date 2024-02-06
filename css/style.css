@@ -1822,3 +1822,8 @@ color: #003B7C !important;
   overflow-y: auto;
   height: calc(100vh - 220px);
 }
+
+.form-check-input[type=checkbox]:indeterminate {
+  background-color: #003b7c !important;
+  border-color: #003b7c !important;
+}
