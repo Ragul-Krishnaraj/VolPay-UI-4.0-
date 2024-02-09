@@ -367,8 +367,11 @@
                                              <div class="form-group row d-flex align-items-center">
                                                 <label class="col-sm-3 col-form-label text-end required-field"> Value Date</label>
                                                 <div class="form-group  col-sm-4 mb-0">
-                                                   <div class="input-group date" id="datePicker"> <input type="text" class="form-control" name="date" value=""> <span class="input-group-addon"> </span> </div>
-                                                </div>
+                                                   <div class="input-group date " id="datePicker"> 
+                                                      <input type="text" class="form-control" name="date" value=""> <span class="input-group-addon"> </span> </div>
+
+                                                      <i class="fas fa-calendar calender"  aria-hidden = "true"></i>
+                                                   </div>
                                                 <div class="col-sm-1"> <span> <i class="fas fa-question-circle primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip links"></i> </span> </div>
                                              </div>
                                              <div class="form-group row d-flex align-items-center  ">
@@ -664,13 +667,13 @@
                                           </div>
                                        </button>
                                     </h2>
-                                    <div id="statement-collapse6" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample6">
-                                       <span class="primary-color f-12 p-2"> Listed below is the summary of the transaction </span>
-                                       <div class="accordion-body bg-white">
-                                          <div class="summary">
-                                             <nav>
-                                                <ul class="list-unstyled">
-                                                   <li> <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-2" role="button" aria-expanded="true" aria-controls="collapseExample" title="VolOB"> Payment Transaction </a> </li>
+                           <div id="statement-collapse6" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample6">
+                              <span class="primary-color f-12 p-2"> Listed below is the summary of the transaction </span>
+                                 <div class="accordion-body bg-white">
+                                    <div class="summary">
+                                       <nav>
+                                          <ul class="list-unstyled">
+                                             <li> <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-2" role="button" aria-expanded="true" aria-controls="collapseExample" title="VolOB"> Payment Transaction </a> </li>
                                                    <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse show" id="sidebar-item-2" data-parent="#sidebar">
                                                       <li class=""> <a class="nav-link " href="" title="">Party Name - Vodafone</a> </li>
                                                       <li> <a class="nav-link" href="" title="">Service - Payment Service - Payment</a> </li>
@@ -835,8 +838,6 @@
           $( '#simple' ).datepicker( optSimple );
           
           $( '#datePicker' ).datepicker( optComponent );
-          
-          
           $( '#datepicker1' ).datepicker({
           format: "mm : dd : yyyy",
           todayHighlight: true,
@@ -849,7 +850,6 @@
       <script> 
          let a = document.getElementById( 
              "Indeterminate").indeterminate = true; 
-         
       </script> 
    </body>
 </html>
