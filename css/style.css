@@ -1928,3 +1928,8 @@ color: #003B7C !important;
     }    
   }
 }
+
+
+textarea.form-control {
+  min-height: calc(1.5em + 4.75rem + 2px) !important;
+}
