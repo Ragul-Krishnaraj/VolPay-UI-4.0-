@@ -1143,7 +1143,7 @@ padding: 0.375rem 2.75rem !important;
 body {
   margin: 0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.08);
   display: flex;
 }
@@ -1932,4 +1932,19 @@ color: #003B7C !important;
 
 textarea.form-control {
   min-height: calc(1.5em + 4.75rem + 2px) !important;
+}
+
+.bsb-tpl-bg-platinum {
+  background: #32476D!important;
+}
+
+.divider:after, .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.bx-shawdow {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
