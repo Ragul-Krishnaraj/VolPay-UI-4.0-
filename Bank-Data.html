@@ -1,511 +1,698 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" />
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-	<title>Bank Data</title>
-</head>
-
-<body>
-	<!-- Nav Bar -->
-	<!-- Sidebar Minimal Holder -->
-	<nav class="d-none d-md-block sidebar_minimal"> <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
-		<a class="navbar-brand d-flex justify-content-center me-0 p-3" href=""> <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo"> </a>
-		<ul class="list-group list-group-flush sidebar-menu-item">
-			<li>
-				<div class="active">
-					<a class="btn" data-bs-toggle="collapse" href="#collapseOne"> <i class="fas fa-chart-bar" aria-label="collapse one"></i> </a>
-				</div>
-				<div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-walking "></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapsetwo"> <i class="fas fa-clipboard" aria-label="collapse two"></i> </a>
-				</div>
-				<div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-weight "></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapsethree"> <i class="fas fa-file-invoice-dollar" aria-label="collapse three"></i> </a>
-				</div>
-				<div id="collapsethree" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-walking "></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapsefour"> <i class="far fa-handshake" aria-label="collapse four"></i> </a>
-				</div>
-				<div id="collapsefour" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-hand-point-right"></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapsefive"> <i class="far fa-user" aria-label="collapse five"></i> </a>
-				</div>
-				<div id="collapsefive" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-users-cog"></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapsesix"> <i class="fas fa-university" aria-label="collapse six"></i> </a>
-				</div>
-				<div id="collapsesix" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-money-check"></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapsesix" aria-label="collapse seven"> <i class="fas fa-database"></i> </a>
-				</div>
-				<div id="collapsesix" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="fas fa-hand-point-left"></i> </div>
-				</div>
-			</li>
-			<li>
-				<div>
-					<a class="btn" data-bs-toggle="collapse" href="#collapseseven"> <i class="fas fa-paper-plane" aria-label="collapse eight"> </i> </a>
-				</div>
-				<div id="collapseseven" class="collapse" data-bs-parent="#accordion">
-					<div> <i class="far fa-hand-point-right"></i> </div>
-				</div>
-			</li>
-			<li class="dropdown br-top fixed-bottom-menu">
-				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement"> <i class="fas fa-user-circle"></i> </a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#" title="Permission">Profile</a> <a class="dropdown-item" href="#" title="Permission">Settings</a> <a class="dropdown-item" href="#" title="Permission">Logout</a> </div>
-			</li>
-		</ul>
-	</nav>
-	<!-- Sidebar Holder -->
-	<nav class="active sidebar">
-		<div class="d-flex flex justify-content-between align-items-center">
-			<a class="navbar-brand mx-3" href="index.html"> <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo"> </a> <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i> </div>
-		<ul class="list-group list-group-flush sidebar-menu-item">
-			<!-- Group 1 -->
-			<!-- Menu Items -->
-			<li>
-				<a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB"> <i class="fas fa-cubes mr-2"></i></i>Label 1 </a>
-			</li>
-			<ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-1" data-parent="#sidebar">
-				<li> <a class="nav-link" href="" title="">Label 2</a> </li>
-				<li> <a class="nav-link" href="" title="">Label 3</a> </li>
-			</ul>
-			<!-- Group 1 Ends -->
-			<!-- Group 2 -->
-			<li class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</li>
-			<!-- Menu Items -->
-			<li>
-				<a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits"> <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
-			</li>
-			<ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-item-4" data-parent="#sidebar">
-				<li> <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a> </li>
-				<li> <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a> </li>
-			</ul>
-			<!-- Group 3 -->
-			<li class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</li>
-			<!-- Menu Items 1 -->
-			<li>
-				<a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard"> <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
-			</li>
-			<ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-volpay-1" data-parent="#sidebar">
-				<li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
-				<li> <a class="nav-link" href="#" title="Test Link">Test Link</a> </li>
-			</ul>
-		</ul>
-	</nav>
-	<!-- Page main-container Holder -->
-	<div class="main-container h-100 active">
-		<h6>Bank Data</h6>
-		<div>
-			<div class="row">
-				<div class="col-sm-6 col-lg-3 p-1">
-					<div class="card">
-						<div class="card-header">
-							<div class="d-flex justify-content-between">
-								<p class="mb-0 primary-color ">All Bank Data</p>
-								<div>
-									<div class="text-right-sm" role="tablist"> <span class="icon-color f-14">
-                                    <i class="fas fa-search " aria-hidden="true"></i>
-
-                                 </span> <span class="icon-color f-14">
-                                    <i class="fas fa-filter" aria-hidden="true"></i>
-
-                                 </span> <span class="icon-color f-14">
-                                    <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-
-                                 </span> </div>
-								</div>
-							</div>
-						</div>
-						<div class="bankdata-li-div">
-							<ul class="list-group">
-								<li class="list-group-item selected">
-									<div class=" row">
-										<div class="col-md-1"> <i class="far fa-calendar icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span> calendar names, calendar code, e... </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span> calendar names, calendar code, e... </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-1"> <i class="fas fa-globe icon-clr"></i> </div>
-										<div class="col-md-11"> <span class="bank-data-heading">INSTRUCTION </span> <span class="badge badge-primary badge-pill float-end">14</span>
-											<br> <span> calendar names, calendar code, e... </span> </div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						</a>
-					</div>
-				</div>
-				<!-- Calenders Section -->
-				<div class="col-sm-6 col-lg-3 p-1">
-					<div class="card">
-						<div class="card-header">
-							<div class="d-flex justify-content-between">
-								<p class="mb-0 primary-color ">Calenders</p>
-								<div>
-									<div class="text-right-sm" role="tablist"> <span class="icon-color f-14">
-                     <i class="fas fa-search " aria-hidden="true"></i>
-
-                  </span> <span class="icon-color f-14">
-                     <i class="fas fa-filter" aria-hidden="true"></i>
-
-                  </span> <span class="icon-color f-14 ">
-                     <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-
-                  </span> </div>
-								</div>
-							</div>
-						</div>
-						<div class="bankdata-li-div">
-							<ul class="list-group">
-								<li class="list-group-item selected">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">GBP Calender (GBP) </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-								<li class="list-group-item">
-									<div class=" row">
-										<div class="col-md-12"> <span class="calenders-sub">Scheduler calendar for client and the data list </span> </div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- End -->
-				<!-- GBP Calender -->
-				<div class="col-sm-6 col-lg-6 p-1">
-					<div class="card">
-						<div class="card-header">
-							<div class="d-flex justify-content-between align-items-center"> <span>
-               <p class="mb-0 primary-color ">GBP</p>
-
-               <p class="mb-0  f-w-600 ">GBP Calender</p>
-
-
-               </span>
-								<div>
-									<div class="text-right-sm" role="tablist">
-										<div class="dropdown">
-											<a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i class="fas fa-ellipsis-v" aria-hidden="true" aria-label="collapse nine"></i> </a>
-											<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#"><i class="las la-book-open mr-2"></i>Open</a> <a class="dropdown-item" href="#"><i class="lar la-edit mr-2"></i>Edit</a> <a class="dropdown-item" href="#"><i class="lar la-trash-alt mr-2"></i>Delete</a> </div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-header text-right-sm" role="tablist"> <span class="icon-color f-14">
-            <i class="fas fa-filter" aria-hidden="true"></i>
-
-         </span> <span class="icon-color f-14">
-            <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-
-         </span> </div>
-						<div class="gbp-calender-div">
-							<ul class="list-group">
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Calendar Code </div>
-										<div class="col-sm-7 f-w-600">GBP</div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Calendar Name </div>
-										<div class="col-sm-7 f-w-600">GBP Calendar </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Calendar Valid Till </div>
-										<div class="col-sm-7 f-w-600">- </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Saturday a Weekend </div>
-										<div class="col-sm-7 f-w-600">YES </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Sunday a Weekend </div>
-										<div class="col-sm-7 f-w-600">YES </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Monday a Weekend </div>
-										<div class="col-sm-7 f-w-600">No </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Tuesday a Weekend </div>
-										<div class="col-sm-7 f-w-600">No </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Wednesday a Weekend </div>
-										<div class="col-sm-7 f-w-600">No </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Thursday a Weekend </div>
-										<div class="col-sm-7 f-w-600">No </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Is Friday a Weekend </div>
-										<div class="col-sm-7 f-w-600">No </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Status </div>
-										<div class="col-sm-7 f-w-600">Active </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Effective From </div>
-										<div class="col-sm-7 f-w-600">Nov 29, 2023 </div>
-									</div>
-								</li>
-								<li class="list-group-item border-bottom">
-									<div class=" row">
-										<div class="col-sm-5  text-secondary">Effective Till </div>
-										<div class="col-sm-7 f-w-600">- </div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Working Area Ends -->
-	</div>
-	<!-- Footer -->
-	<nav class="navbar fixed-bottom navbar-light py-1 px-3 active d-none" id="footer">
-		<div class="small">VolPay &copy; 2023. <span class="d-none d-sm-inline-block">All rights reserved.</span></div>
-		<div class="small float-right">Version: <span class="font-weight-bold">1</span></div>
-	</nav>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$('#sidebarCollapse').on('click', function() {
-			$('.sidebar, .main-container, #footer').toggleClass('active');
-			$('.collapse.in').toggleClass('in');
-			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
-		});
-		$('#sidebarCollapsed').on('click', function() {
-			$('.sidebar, .main-container, #footer').toggleClass('active');
-			$('.collapse.in').toggleClass('in');
-			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
-		});
-	});
-	</script>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" main-container="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" id="fav-icon" href="img/icons/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <title>Bank Data</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <!-- Sidebar Minimal Holder -->
+    <nav class="d-none d-md-block sidebar_minimal">
+      <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
+      <a class="navbar-brand d-flex justify-content-center me-0 p-3" href="">
+        <img src="img/side_nav/volante-icon-white.png" height="18" alt="Company Logo">
+      </a>
+      <ul class="list-group list-group-flush sidebar-menu-item">
+        <li>
+          <div class="active">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              <i class="fas fa-chart-bar" aria-label="collapse one"></i>
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-walking "></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsetwo">
+              <i class="fas fa-clipboard" aria-label="collapse two"></i>
+            </a>
+          </div>
+          <div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-weight "></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsethree">
+              <i class="fas fa-file-invoice-dollar" aria-label="collapse three"></i>
+            </a>
+          </div>
+          <div id="collapsethree" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-walking "></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsefour">
+              <i class="far fa-handshake" aria-label="collapse four"></i>
+            </a>
+          </div>
+          <div id="collapsefour" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-hand-point-right"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsefive">
+              <i class="far fa-user" aria-label="collapse five"></i>
+            </a>
+          </div>
+          <div id="collapsefive" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-users-cog"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsesix">
+              <i class="fas fa-university" aria-label="collapse six"></i>
+            </a>
+          </div>
+          <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-money-check"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapsesix" aria-label="collapse seven">
+              <i class="fas fa-database"></i>
+            </a>
+          </div>
+          <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="fas fa-hand-point-left"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a class="btn" data-bs-toggle="collapse" href="#collapseseven">
+              <i class="fas fa-paper-plane" aria-label="collapse eight"></i>
+            </a>
+          </div>
+          <div id="collapseseven" class="collapse" data-bs-parent="#accordion">
+            <div>
+              <i class="far fa-hand-point-right"></i>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown br-top fixed-bottom-menu">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Entitlement">
+            <i class="fas fa-user-circle"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#" title="Permission">Profile</a>
+            <a class="dropdown-item" href="#" title="Permission">Settings</a>
+            <a class="dropdown-item" href="#" title="Permission">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- Sidebar Holder -->
+    <nav class="active sidebar">
+      <div class="d-flex flex justify-content-between align-items-center">
+        <a class="navbar-brand mx-3" href="index.html">
+          <img src="img/side_nav/volante-icon-white-expand.png" height="25" alt="Company Logo">
+        </a>
+        <i class="fas fa-bars top_nav_sidebar_icon mx-3" id="sidebarCollapsed"></i>
+      </div>
+      <ul class="list-group list-group-flush sidebar-menu-item">
+        <!-- Group 1 -->
+        <!-- Menu Items -->
+        <li>
+          <a class="nav-link sidebar-collapse-btn collapsed" data-bs-toggle="collapse" href="#sidebar-item-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="VolOB">
+            <i class="fas fa-cubes mr-2"></i>
+            </i>Label 1 </a>
+        </li>
+        <ul class="list-group list-group-flush list-unstyled sidebar-menu-item-collapse collapse" id="sidebar-item-1" data-parent="#sidebar">
+          <li>
+            <a class="nav-link" href="" title="">Label 2</a>
+          </li>
+          <li>
+            <a class="nav-link" href="" title="">Label 3</a>
+          </li>
+        </ul>
+        <!-- Group 1 Ends -->
+        <!-- Group 2 -->
+        <li class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">Sample Pages</li>
+        <!-- Menu Items -->
+        <li>
+          <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-item-4" role="button" aria-expanded="false" aria-controls="collapseExample" title="Fruits">
+            <i class="fas fa-file-alt mr-2"></i>Sample Pages </a>
+        </li>
+        <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-item-4" data-parent="#sidebar">
+          <li>
+            <a class="nav-link" href="sample-1.html" title="Sample 1">Sample 1</a>
+          </li>
+          <li>
+            <a class="nav-link" href="sample-2.html" title="Sample 2">Sample 2</a>
+          </li>
+        </ul>
+        <!-- Group 3 -->
+        <li class="font-weight-bold brand-seconday-color-text pt-3 px-2 mb-1 small text-uppercase">VolPay</li>
+        <!-- Menu Items 1 -->
+        <li>
+          <a class="nav-link sidebar-collapse-btn" data-bs-toggle="collapse" href="#sidebar-volpay-1" role="button" aria-expanded="false" aria-controls="collapseExample" title="Dashboard">
+            <i class="fas fa-tachometer-alt  mr-2"></i>Dashboard </a>
+        </li>
+        <ul class="list-group list-group-flush list-unstyled collapse sidebar-menu-item-collapse" id="sidebar-volpay-1" data-parent="#sidebar">
+          <li>
+            <a class="nav-link" href="#" title="Test Link">Test Link</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#" title="Test Link">Test Link</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+    <!-- Page main-container Holder -->
+    <div class="main-container h-100 active">
+      <h6>Bank Data</h6>
+      <div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 p-1">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 primary-color ">All Bank Data</p>
+                  <div>
+                    <div class="text-right-sm" role="tablist">
+                      <span class="icon-color f-14">
+                        <i class="fas fa-search " aria-hidden="true"></i>
+                      </span>
+                      <span class="icon-color f-14">
+                        <i class="fas fa-filter" aria-hidden="true"></i>
+                      </span>
+                      <span class="icon-color f-14">
+                        <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bankdata-li-div">
+                <ul class="list-group">
+                  <li class="list-group-item selected">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="far fa-calendar icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span class="bankdata-sub"> calendar names, calendar code, actual data are listed </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span> calendar names, calendar code, e... </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span> calendar names, calendar code, e... </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-1">
+                        <i class="fas fa-globe icon-clr"></i>
+                      </div>
+                      <div class="col-md-11">
+                        <span class="bank-data-heading">INSTRUCTION </span>
+                        <span class="badge badge-primary badge-pill float-end">14</span>
+                        <br>
+                        <span> calendar names, calendar code, e... </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              </a>
+            </div>
+          </div>
+          <!-- Calenders Section -->
+          <div class="col-sm-6 col-lg-3 p-1">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0 primary-color ">Calenders</p>
+                  <div>
+                    <div class="text-right-sm" role="tablist">
+                      <span class="icon-color f-14">
+                        <i class="fas fa-search " aria-hidden="true"></i>
+                      </span>
+                      <span class="icon-color f-14">
+                        <i class="fas fa-filter" aria-hidden="true"></i>
+                      </span>
+                      <span class="icon-color f-14 ">
+                        <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bankdata-li-div">
+                <ul class="list-group">
+                  <li class="list-group-item selected">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">GBP Calender (GBP) </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class=" row">
+                      <div class="col-md-12">
+                        <span class="calenders-sub">Scheduler calendar for client and the data list </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
+          <!-- GBP Calender -->
+          <div class="col-sm-6 col-lg-6 p-1">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>
+                    <p class="mb-0 primary-color ">GBP</p>
+                    <p class="mb-0  f-w-600 ">GBP Calender</p>
+                  </span>
+                  <div>
+                    <div class="text-right-sm" role="tablist">
+                      <div class="dropdown">
+                        <a class="text-primary cursor-pointer" id="dropdownMenuButton" aria-label="collapse nine"  data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">
+                            <i class="las la-book-open mr-2"></i>Open </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="lar la-edit mr-2"></i>Edit </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="lar la-trash-alt mr-2"></i>Delete </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-header text-right-sm" role="tablist">
+                <span class="icon-color f-14">
+                  <i class="fas fa-filter" aria-hidden="true"></i>
+                </span>
+                <span class="icon-color f-14">
+                  <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="gbp-calender-div">
+                <ul class="list-group">
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Calendar Code </div>
+                      <div class="col-sm-7 f-w-600">GBP</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Calendar Name </div>
+                      <div class="col-sm-7 f-w-600">GBP Calendar </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Calendar Valid Till </div>
+                      <div class="col-sm-7 f-w-600">- </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Saturday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">YES </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Sunday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">YES </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Monday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">No </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Tuesday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">No </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Wednesday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">No </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Thursday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">No </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Is Friday a Weekend </div>
+                      <div class="col-sm-7 f-w-600">No </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Status </div>
+                      <div class="col-sm-7 f-w-600">Active </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Effective From </div>
+                      <div class="col-sm-7 f-w-600">Nov 29, 2023 </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-bottom">
+                    <div class=" row">
+                      <div class="col-sm-5  text-secondary">Effective Till </div>
+                      <div class="col-sm-7 f-w-600">- </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Working Area Ends -->
+    </div>
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom navbar-light py-1 px-3 active d-none" id="footer">
+      <div class="small">VolPay &copy; 2023. <span class="d-none d-sm-inline-block">All rights reserved.</span>
+      </div>
+      <div class="small float-right">Version: <span class="font-weight-bold">1</span>
+      </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+          $('.sidebar, .main-container, #footer').toggleClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+        $('#sidebarCollapsed').on('click', function() {
+          $('.sidebar, .main-container, #footer').toggleClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+      });
+    </script>
+  </body>
 </html>
