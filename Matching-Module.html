@@ -12,7 +12,6 @@
     <title>Matching Module</title>
   </head>
   <body>
-    <!-- Nav Bar -->
     <!-- Sidebar Minimal Holder -->
     <nav class="d-none d-md-block sidebar_minimal">
       <i class="fas fa-bars top_nav_sidebar_icon p-3 d-flex justify-content-center border-bottom" id="sidebarCollapse"></i>
@@ -192,10 +191,51 @@
         <div class="d-flex">
           <div class="col-sm-6 col-lg-6 p-1">
             <div class="card">
-              <div class="card-header">
+              <div class="card-header p-0 bg-theme">
+                <div class="d-flex justify-content-center">
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle dropdown-custom" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Transactions </a>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                      <li>
+                        <a class="dropdown-item" href="#">Bank Statement</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Instructions </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Transactions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-header p-2">
                 <div class="d-flex justify-content-between">
-                  <p class="mb-0 primary-color ">All Bank Data</p>
-                  <div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-md-0 statement-header-info">
+                      <div class="form-check  d-flex align-items-center">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1"></label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> View - All (394) </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
                     <div class="text-right-sm" role="tablist">
                       <span class="icon-color f-14">
                         <i class="fas fa-search " aria-hidden="true"></i>
@@ -210,29 +250,198 @@
                   </div>
                 </div>
               </div>
-              <div class="bankdata-li-div">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <div class=" row">
-                      <div class="col-md-1">
-                        <i class="fas fa-globe icon-clr"></i>
-                      </div>
-                      <div class="col-md-11">
-                        <span class="bank-data-heading">INSTRUCTION </span>
-                        <span class="badge badge-primary badge-pill float-end">14</span>
-                        <br>
-                        <span> calendar names, calendar code, e... </span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <div class="matching-module-div">
+                <table class="table accordion table-responsive table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                          <label class="form-check-label" for="flexCheckDefault2"></label>
+                        </div>
+                      </td>
+                      <td scope="col">Reference ID </td>
+                      <td scope="col">Account Number </td>
+                      <td scope="col">CRDT/DBIT </td>
+                      <td scope="col">Amount </td>
+                      <td scope="col">Time Stamp </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                          <label class="form-check-label" for="flexCheckDefault4"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                          <label class="form-check-label" for="flexCheckDefault5"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                          <label class="form-check-label" for="flexCheckDefault6"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                          <label class="form-check-label" for="flexCheckDefault7"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                          <label class="form-check-label" for="flexCheckDefault8"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                          <label class="form-check-label" for="flexCheckDefault9"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                          <label class="form-check-label" for="flexCheckDefault10"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                          <label class="form-check-label" for="flexCheckDefault11"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                          <label class="form-check-label" for="flexCheckDefault12"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>91lr3cha0943</td>
+                      <td>FED43224</td>
+                      <td>CRDT </td>
+                      <td>USD 110.15</td>
+                      <td>15-02-2024 | 10:07:47.589 </td>
+                    </tr>
+                  
+                  </tbody>
+                </table>
               </div>
               </a>
             </div>
           </div>
-          <div class="d-flex align-items-center primary"> <i class="fas fa-exchange-alt"></i></div>
+          <div class="d-flex align-items-center primary">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
           <div class="col-sm-6 col-lg-6 p-1">
             <div class="card">
+              <div class="card-header p-0 bg-theme">
+                <div class="d-flex justify-content-center">
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle dropdown-custom" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Bank Statement </a>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                      <li>
+                        <a class="dropdown-item" href="#">Bank Statement</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Instructions </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Transactions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
                   <span>
@@ -266,7 +475,7 @@
                   <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
                 </span>
               </div>
-              <div class="gbp-calender-div">
+              <div class="matching-module-statement">
                 <ul class="list-group">
                   <li class="list-group-item border-bottom">
                     <div class=" row">

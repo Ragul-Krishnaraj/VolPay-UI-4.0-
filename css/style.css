@@ -1403,6 +1403,9 @@ background: #E6EBF2;
 .bg-blue{
   background: #003B7C;
 }
+.bg-theme{
+  background:#B3C4D8!important;
+}
 
 .page-link {
   color: #18243E !important;
@@ -1947,4 +1950,26 @@ textarea.form-control {
 
 .bx-shawdow {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.dropdown-custom{
+  background: #B3C4D8 !important;
+  border: none !important;
+  color: #003B7C !important;
+  font-weight: 500 !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #fff !important;
+  background-color: #003B7C !important;
+}
+
+.matching-module-div {
+  overflow-y: auto;
+  height: calc(100vh - 145px);
+}
+
+.matching-module-statement {
+  overflow-y: auto;
+  height: calc(100vh - 209px);
 }
