@@ -1974,3 +1974,12 @@ textarea.form-control {
   overflow-y: auto;
   height: calc(100vh - 209px);
 }
+
+@media (min-width: 1200px) { 
+
+  .bank-statment-responsive {
+      width: 57% !important;
+  }
+  }
+  
+  
