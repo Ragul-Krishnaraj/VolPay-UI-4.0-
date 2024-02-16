@@ -1981,5 +1981,25 @@ textarea.form-control {
       width: 57% !important;
   }
   }
-  
-  
+
+
+
+  .alert-success {
+    color: #18243E !important;
+    background-color: #D9EED1 !important;
+    border-color: #D9EED1!important;
+}
+
+ .alert-link {
+  color: #003B7C !important;
+}
+.triangle{
+position: relative;
+top: 0;
+right: 0;
+z-index: 2;
+padding: 1.25rem 2rem;
+background: #44AB1Aed;
+margin-right: 10px;
+color:#fff;
+}
