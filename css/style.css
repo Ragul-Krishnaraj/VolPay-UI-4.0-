@@ -1993,13 +1993,84 @@ textarea.form-control {
  .alert-link {
   color: #003B7C !important;
 }
-.triangle{
-position: relative;
-top: 0;
-right: 0;
-z-index: 2;
-padding: 1.25rem 2rem;
-background: #44AB1Aed;
-margin-right: 10px;
-color:#fff;
+
+
+
+
+/* alert */
+.alert {
+	z-index: 1;
+	word-break: break-word;
+	padding: 0;
+  padding: 0;
+  color: #18243E !important;
+}
+
+.alertSymbol {
+	width: 46px;
+	padding: 9px;
+}
+
+.txtBox {
+	padding: 0.75rem 1.25rem 0.725rem 0rem;
+	margin-left: 5px;
+}
+
+.designBox {
+	width: 15px;
+	transform: skew(-6deg, 0deg);
+	z-index: 3;
+	margin-left: -8px;
+	position: relative;
+}
+
+.triangle {
+	width: 30px;
+}
+
+.success {
+	background: linear-gradient(to top left, #D9EED1 0%, #D9EED1 50%, transparent 50%, transparent 100%);
+}
+
+.danger {
+	background: linear-gradient(to top left, #f8d7da 0%, #f8d7da 50%, transparent 50%, transparent 100%);
+}
+
+.warning {
+	background: linear-gradient(to top left, #fff3cd 0%, #fff3cd 50%, transparent 50%, transparent 100%);
+}
+
+.alertIcon {
+	font-size: 15px;
+	margin-left: 6px;
+}
+
+.totalAlrt:not(.closeAnimation) {
+	animation-name: smoothness;
+	animation-duration: 2s;
+}
+
+.closeAnimation {
+	animation-name: closeAnimation;
+	animation-duration: 2s;
+}
+
+@keyframes smoothness {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes closeAnimation {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
 }

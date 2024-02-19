@@ -187,14 +187,39 @@
     <!-- Page main-container Holder -->
     <div class="main-container h-100 active">
       <h6>Reconciliation Matching</h6>
-      <div class="alert alert-success alert-dismissible fade show d-flex p-0 align-items-center" role="alert">
-        <div class="triangle">
-          <i class="fas fa-check"></i>
+      <div class="w-100 d-flex flex-fill">
+        <div  class="w-100 d-flex flex-fill bold animated fadeIn alert alert-danger border p-0">
+          <div class="alertSymbol bg-danger d-flex flex-column justify-content-center">
+            <i class="far fa-file-alt text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
+          </div>
+          <div class="bg-danger triangle danger"></div>
+          <span class="txtBox w-100 d-flex">
+            <span>3 Transactions Selected        1 Bank Statement Selected</span>
+          </span>
+          <button type="button" class="btn-close align-self-center px-3" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div>Transactions &amp; Statements successfully matched and sent for approval..!! &nbsp; &nbsp; <a href="#" class="alert-link">View force match details</a>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
+
+
+
+      <div class="w-100 d-flex">
+        <div class="w-100 d-flex animated fadeIn alert-success border p-0">
+          <div class="alertSymbol bg-success d-flex flex-column justify-content-center">
+            <i class="fas fa-check text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
+          </div>
+          <div class="bg-success triangle success"></div>
+          <span class="txtBox w-100 d-flex">
+            <span>Transactions & Statements successfully matched and sent for approval..!!  <a href="#" class="link-primary">View force match details</a>
+             </span>
+          </span>
+          <button type="button" class="btn-close align-self-center px-3" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+
+
+
       <div>
         <div class="row p-2">
           <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 p-1">
