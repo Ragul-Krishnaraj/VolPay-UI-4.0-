@@ -188,7 +188,7 @@
     <div class="main-container h-100 active">
       <h6>Reconciliation Matching</h6>
       <div class="w-100 d-flex flex-fill">
-        <div class="w-100 d-flex flex-fill bold animated fadeIn alert alert-danger border p-0">
+        <div class="w-100 d-flex flex-fill bold animated fadeIn alert alert-danger border p-0 mb-0">
           <div class="alertSymbol bg-danger d-flex flex-column justify-content-center">
             <i class="far fa-file-alt text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
           </div>
@@ -197,12 +197,25 @@
             <span>3 Transactions Selected 1 Bank Statement Selected</span>
           </span>
           <div class="dropdown d-flex">
-            <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" aria-expanded="false"> CHOOSE ACTION </button>
-          </div>
+            <button class="btn btn-default dropdown-toggle rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#ChooseAction" aria-expanded="false" aria-controls="collapseExample">
+              CHOOSE ACTION
+            </button>          </div>
+
+          
           <button type="button" class="btn-close align-self-center px-3" data-bs-dismiss="alert" aria-label="Close"></button>
+        
         </div>
       </div>
-      <div class="w-100 d-flex flex-fill">
+
+      
+      <div class="collapse" id="ChooseAction">
+        <div class="card card-body border-0">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+
+
+      <div class="w-100 d-flex flex-fill mt-1">
         <div class="w-100 d-flex flex-fill bold animated fadeIn alert alert-success border p-0">
           <div class="alertSymbol bg-success d-flex flex-column justify-content-center">
             <i class="far fa-file-alt text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
@@ -211,9 +224,6 @@
           <span class="txtBox w-100 d-flex">
             <span>3 Transactions Selected 1 Bank Statement Selected</span>
           </span>
-          <div class="dropdown d-flex">
-            <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" aria-expanded="false"> CHOOSE ACTION </button>
-          </div>
           <button type="button" class="btn-close align-self-center px-3" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
@@ -244,8 +254,8 @@
                   <div class="col-md-6 d-flex align-items-center">
                     <div class="col-md-0 statement-header-info">
                       <div class="form-check  d-flex align-items-center">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                        <label class="form-check-label" for="flexCheckDefault1"></label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault0">
+                        <label class="form-check-label" for="flexCheckDefault0"></label>
                       </div>
                     </div>
                     <div>
@@ -286,8 +296,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                          <label class="form-check-label" for="flexCheckDefault2"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultone">
+                          <label class="form-check-label" for="flexCheckDefaultone"></label>
                         </div>
                       </td>
                       <td scope="col">Reference ID </td>
@@ -301,8 +311,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultthree">
+                          <label class="form-check-label" for="flexCheckDefaultthree"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -314,8 +324,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultfour">
+                          <label class="form-check-label" for="flexCheckDefaultfour"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -327,8 +337,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultfive">
+                          <label class="form-check-label" for="flexCheckDefaultfive"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -340,8 +350,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultsix">
+                          <label class="form-check-label" for="flexCheckDefaultsix"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -353,8 +363,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultseven">
+                          <label class="form-check-label" for="flexCheckDefaultseven"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -366,8 +376,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulteight">
+                          <label class="form-check-label" for="flexCheckDefaulteight"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -379,8 +389,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                          <label class="form-check-label" for="flexCheckDefault3"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultnine">
+                          <label class="form-check-label" for="flexCheckDefaultnine"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -392,8 +402,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
-                          <label class="form-check-label" for="flexCheckDefault4"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulttwelve">
+                          <label class="form-check-label" for="flexCheckDefaulttwelve"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -405,8 +415,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
-                          <label class="form-check-label" for="flexCheckDefault5"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultfifteen">
+                          <label class="form-check-label" for="flexCheckDefaultfifteen"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -418,8 +428,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
-                          <label class="form-check-label" for="flexCheckDefault6"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultsixteen">
+                          <label class="form-check-label" for="flexCheckDefaultsixteen"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -431,8 +441,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
-                          <label class="form-check-label" for="flexCheckDefault7"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultnineteen">
+                          <label class="form-check-label" for="flexCheckDefaultnineteen"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -444,8 +454,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
-                          <label class="form-check-label" for="flexCheckDefault8"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulttwenty">
+                          <label class="form-check-label" for="flexCheckDefaulttwenty"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -457,8 +467,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
-                          <label class="form-check-label" for="flexCheckDefault9"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                          <label class="form-check-label" for="flexCheckDefault2"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -470,8 +480,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
-                          <label class="form-check-label" for="flexCheckDefault10"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultten">
+                          <label class="form-check-label" for="flexCheckDefaultten"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -483,8 +493,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
-                          <label class="form-check-label" for="flexCheckDefault11"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultthirteen">
+                          <label class="form-check-label" for="flexCheckDefaultthirteen"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -496,8 +506,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
-                          <label class="form-check-label" for="flexCheckDefault12"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultfourteen">
+                          <label class="form-check-label" for="flexCheckDefaultfourteen"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -509,8 +519,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultseventeen">
+                          <label class="form-check-label" for="flexCheckDefaultseventeen"></label>
                         </div>
                       </td>
                       <td>91lr3cha0943</td>
@@ -595,8 +605,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                          <label class="form-check-label" for="flexCheckDefault2"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulteleven">
+                          <label class="form-check-label" for="flexCheckDefaulteleven"></label>
                         </div>
                       </td>
                       <td scope="col">Payment ID </td>
@@ -610,8 +620,73 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulteighteen">
+                          <label class="form-check-label" for="flexCheckDefaulteighteen"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                          <label class="form-check-label" for="flexCheckDefault8"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                          <label class="form-check-label" for="flexCheckDefault9"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                          <label class="form-check-label" for="flexCheckDefault10"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                          <label class="form-check-label" for="flexCheckDefault11"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                          <label class="form-check-label" for="flexCheckDefault12"></label>
                         </div>
                       </td>
                       <td>3535323545454</td>
@@ -636,8 +711,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                          <label class="form-check-label" for="flexCheckDefault14"></label>
                         </div>
                       </td>
                       <td>3535323545454</td>
@@ -649,8 +724,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+                          <label class="form-check-label" for="flexCheckDefault15"></label>
                         </div>
                       </td>
                       <td>3535323545454</td>
@@ -662,8 +737,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
+                          <label class="form-check-label" for="flexCheckDefault16"></label>
                         </div>
                       </td>
                       <td>3535323545454</td>
@@ -675,8 +750,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
+                          <label class="form-check-label" for="flexCheckDefault17"></label>
                         </div>
                       </td>
                       <td>3535323545454</td>
@@ -688,73 +763,8 @@
                     <tr>
                       <td>
                         <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
-                        </div>
-                      </td>
-                      <td>3535323545454</td>
-                      <td>FED_IN </td>
-                      <td>ACCEPTED </td>
-                      <td>2343434LTEMID322344 </td>
-                      <td>USD 110.15 </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
-                        </div>
-                      </td>
-                      <td>3535323545454</td>
-                      <td>FED_IN </td>
-                      <td>ACCEPTED </td>
-                      <td>2343434LTEMID322344 </td>
-                      <td>USD 110.15 </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
-                        </div>
-                      </td>
-                      <td>3535323545454</td>
-                      <td>FED_IN </td>
-                      <td>ACCEPTED </td>
-                      <td>2343434LTEMID322344 </td>
-                      <td>USD 110.15 </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
-                        </div>
-                      </td>
-                      <td>3535323545454</td>
-                      <td>FED_IN </td>
-                      <td>ACCEPTED </td>
-                      <td>2343434LTEMID322344 </td>
-                      <td>USD 110.15 </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
-                        </div>
-                      </td>
-                      <td>3535323545454</td>
-                      <td>FED_IN </td>
-                      <td>ACCEPTED </td>
-                      <td>2343434LTEMID322344 </td>
-                      <td>USD 110.15 </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check  d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
-                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
+                          <label class="form-check-label" for="flexCheckDefault18"></label>
                         </div>
                       </td>
                       <td>3535323545454</td>
