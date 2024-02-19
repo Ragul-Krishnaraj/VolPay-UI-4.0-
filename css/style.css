@@ -1972,7 +1972,7 @@ textarea.form-control {
 
 .matching-module-statement {
   overflow-y: auto;
-  height: calc(100vh - 209px);
+  height: calc(100vh - 145px);
 }
 
 @media (min-width: 1200px) { 
@@ -1981,6 +1981,18 @@ textarea.form-control {
       width: 57% !important;
   }
   }
+
+  @media only screen and (min-width: 834px) and (max-width: 1194px)  { 
+    .bank-statment-responsive {
+      width: 56% !important;
+  }
+
+  .row.p-2{
+    padding-right: 0 !important;
+  }
+  }
+
+
 
 
 

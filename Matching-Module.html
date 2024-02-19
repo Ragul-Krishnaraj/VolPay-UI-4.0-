@@ -188,38 +188,35 @@
     <div class="main-container h-100 active">
       <h6>Reconciliation Matching</h6>
       <div class="w-100 d-flex flex-fill">
-        <div  class="w-100 d-flex flex-fill bold animated fadeIn alert alert-danger border p-0">
+        <div class="w-100 d-flex flex-fill bold animated fadeIn alert alert-danger border p-0">
           <div class="alertSymbol bg-danger d-flex flex-column justify-content-center">
             <i class="far fa-file-alt text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
           </div>
           <div class="bg-danger triangle danger"></div>
           <span class="txtBox w-100 d-flex">
-            <span>3 Transactions Selected        1 Bank Statement Selected</span>
+            <span>3 Transactions Selected 1 Bank Statement Selected</span>
           </span>
+          <div class="dropdown d-flex">
+            <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" aria-expanded="false"> CHOOSE ACTION </button>
+          </div>
           <button type="button" class="btn-close align-self-center px-3" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
-
-
-
-      <div class="w-100 d-flex">
-        <div class="w-100 d-flex animated fadeIn alert-success border p-0">
+      <div class="w-100 d-flex flex-fill">
+        <div class="w-100 d-flex flex-fill bold animated fadeIn alert alert-success border p-0">
           <div class="alertSymbol bg-success d-flex flex-column justify-content-center">
-            <i class="fas fa-check text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
+            <i class="far fa-file-alt text-white align-self-center alertIcon alrtIcn_388 fa-check"></i>
           </div>
           <div class="bg-success triangle success"></div>
           <span class="txtBox w-100 d-flex">
-            <span>Transactions & Statements successfully matched and sent for approval..!!  <a href="#" class="link-primary">View force match details</a>
-             </span>
+            <span>3 Transactions Selected 1 Bank Statement Selected</span>
           </span>
+          <div class="dropdown d-flex">
+            <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" aria-expanded="false"> CHOOSE ACTION </button>
+          </div>
           <button type="button" class="btn-close align-self-center px-3" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
-
-
-
-
-
       <div>
         <div class="row p-2">
           <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 p-1">
@@ -551,48 +548,223 @@
                   </div>
                 </div>
               </div>
-              <div class="card-header">
-                <div class="d-flex justify-content-between align-items-center">
-                  <span>
-                    <p class="mb-0 primary-color ">GBP</p>
-                    <p class="mb-0  f-w-600 ">GBP Calender</p>
-                  </span>
-                  <div>
-                    <div class="text-right-sm" role="tablist">
-                      <div class="dropdown">
-                        <a class="text-primary cursor-pointer" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">
-                            <i class="las la-book-open mr-2"></i>Open </a>
-                          <a class="dropdown-item" href="#">
-                            <i class="lar la-edit mr-2"></i>Edit </a>
-                          <a class="dropdown-item" href="#">
-                            <i class="lar la-trash-alt mr-2"></i>Delete </a>
-                        </div>
+              <div class="card-header p-2">
+                <div class="d-flex justify-content-between">
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-md-0 statement-header-info">
+                      <div class="form-check  d-flex align-items-center">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1"></label>
                       </div>
+                    </div>
+                    <div>
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> View - All (394) </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="text-right-sm" role="tablist">
+                      <span class="icon-color f-14">
+                        <i class="fas fa-search " aria-hidden="true"></i>
+                      </span>
+                      <span class="icon-color f-14">
+                        <i class="fas fa-filter" aria-hidden="true"></i>
+                      </span>
+                      <span class="icon-color f-14">
+                        <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card-header text-right-sm" role="tablist">
-                <span class="icon-color f-14">
-                  <i class="fas fa-filter" aria-hidden="true"></i>
-                </span>
-                <span class="icon-color f-14">
-                  <i class="fas fa-sort-amount-down-alt" aria-hidden="true"></i>
-                </span>
-              </div>
               <div class="matching-module-statement">
-                <ul class="list-group">
-                  <li class="list-group-item border-bottom">
-                    <div class=" row">
-                      <div class="col-sm-5  text-secondary">Calendar Code </div>
-                      <div class="col-sm-7 f-w-600">GBP</div>
-                    </div>
-                  </li>
-                </ul>
+                <table class="table accordion table-responsive table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                          <label class="form-check-label" for="flexCheckDefault2"></label>
+                        </div>
+                      </td>
+                      <td scope="col">Payment ID </td>
+                      <td scope="col">MOP </td>
+                      <td scope="col">Payment Status </td>
+                      <td scope="col">Original Payment Reference </td>
+                      <td scope="col">Amount </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check  d-flex align-items-center">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                          <label class="form-check-label" for="flexCheckDefault13"></label>
+                        </div>
+                      </td>
+                      <td>3535323545454</td>
+                      <td>FED_IN </td>
+                      <td>ACCEPTED </td>
+                      <td>2343434LTEMID322344 </td>
+                      <td>USD 110.15 </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
