@@ -204,11 +204,41 @@
       </div>
       <div class="collapse" id="ChooseAction">
         <div class="card card-body border-0 py-0 p-0">
-          <div class="p-2"> Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. </div>
+          <div class="p-2">
+            <div class="">
+              <div class="form-group mt-2 input-group">
+                <label class="has-float-label w-25">
+                  <select class="form-select mt-1" id="exampleFormControlSelect1">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                  <span>Auto Balance Adjustment</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div class="form-group row d-flex align-items-center  ">
+                <div class="form-group col-sm-4 mb-0">
+                  <select class="form-select" id="exampleFormControlSelect1">
+                    <option>Choose Account Number</option>
+                    <option>112323443244</option>
+                    <option>112323443244</option>
+                    <option>112323443244</option>
+                    <option>112323443244</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6 mb-0">
+                  <input type="paymentcode" class="form-control" id="method" aria-describedby="method" placeholder="Add Comment, notes for future reference">
+                </div>
+              </div>
+              <div>
+                <a href="#" class="link-primary">View list of selected transactions & bank statements</a>
+              </div>
+            </div>
+          </div>
           <div>
             <div class="col-md-12 card-footer d-flex flex-row-reverse mt-1 z-index border-0">
-              <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#savemodal">Save &amp; Submit</button>
-              <button type="button" class="btn btn-default me-3 rounded-pill">Save</button>
+              <button type="button" class="btn btn-primary rounded-pill">FORCE MATCH</button>
               <button type="button" class="btn btn-default me-3 rounded-pill">Cancel</button>
             </div>
           </div>
