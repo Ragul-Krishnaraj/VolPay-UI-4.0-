@@ -2109,3 +2109,18 @@ textarea.form-control {
   padding: 0 1px;
   background: #fff;
 }
+
+
+/* before icon for collpase  */
+.before-class:before {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f8d7da;
+  content: " ";
+  position: absolute;
+  bottom: -15px;
+  right: 8%;
+  top: 0;
+}
