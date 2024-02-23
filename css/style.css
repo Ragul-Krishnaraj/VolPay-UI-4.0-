@@ -2124,3 +2124,11 @@ textarea.form-control {
   right: 5%;
   top: 0;
 }
+
+.bg-themes {
+  background: #D7E0E5 !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #e6ebf2 !important;
+}
