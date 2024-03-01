@@ -287,7 +287,7 @@ body {
 }
 .main-container.active {
   width: calc(100% - 47px);
-  background: #D7E0E5;
+  background: #F5F5F5;
 }
 
 /* ========= Top Nav ========= */
