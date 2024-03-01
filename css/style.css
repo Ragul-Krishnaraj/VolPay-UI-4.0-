@@ -2132,3 +2132,16 @@ textarea.form-control {
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: #e6ebf2 !important;
 }
+
+.text-secondary {
+  color: #18243E !important;
+  font-weight: 500;
+}
+
+.container-data .accordion-button.collapsed.bg-grey {
+    background: #F5F5F5 !important;
+}
+
+.container-data .accordion-item:first-of-type .accordion-button {
+  background: #F5F5F5 !important;
+}
