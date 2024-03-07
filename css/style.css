@@ -2180,4 +2180,10 @@ textarea.form-control {
   display:none !important; 
 }
 
+.Widget-edit i {
+  cursor: pointer;
+}
 
+.bg-grey {
+  background: #F7F7F7!important;
+}
