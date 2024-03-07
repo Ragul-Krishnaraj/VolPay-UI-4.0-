@@ -292,7 +292,7 @@
             <div id="dashboard-view-settings" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#dashboard-view-settings">
               <div class="accordion-body bg-white">
                 <div class="row p-0 elements" id="elements">
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-2">
                     <div class="card">
                       <div class="card-header d-flex justify-content-between bg-grey"> Untitled Widget  
                           <div class="Widget-edit text-secondary">
@@ -311,7 +311,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-2">
                     <div class="card">
                       <div class="card-header d-flex justify-content-between bg-grey"> Untitled Widget  
                           <div class="Widget-edit text-secondary">
@@ -400,20 +400,29 @@
     <script>
        function addElement() {
         $("#elements").append(
-                        "<div class='col-md-4 mb-2'>"+
-                         "<div class='card'>"+
-                         "<div class='card-header'> Featured </div>"+
-                         "<div class='card-body'>"+
-                         "<h5 class='card-title'>Special title treatment</h5>"+
-                        "<p class='card-text'>With supporting text below as a natural lead-in to additional content.</p>"+
-                        "<a href='#' class='btn btn-primary'>Go somewhere</a>"+
-                    "</div>"+
-                    " </div>"+
-                    " </div>"+
-                   "</li>");
+          "<div class='col-md-4 mb-2'>"+
+  "<div class='card'>"+
+    "<div class='card-header d-flex justify-content-between bg-grey'> Untitled Widget "+
+      "<div class='Widget-edit text-secondary'>"+
+        " <i class='fas fa-edit me-2'></i>"+
+        "<i class='fas fa-times me-2'></i>"+
+        "</div>"+
+        "</div>"+
+        "<div class='card-body text-center'>"+
+          "<div class='mb-4'>"+
+            "<img src='img/icons/EmptyInbox.svg'>"+
+            "</div>"+
+            " <h5 class='card-title'>Your widget card is empty </h5>"+
+            "<p class='card-text mb-1'>You need to configure it as per your requirement</p>"+
+            "<a href='#' class='text-decoration-none'>Configure</a>"+
+            "</div>"+
+            "</div>"+
+            "</div>"+
+            "</li>");     
   
 }
-        $(function() {
+
+   $(function() {
           $("#add-todo-item").on('click', function(e) {
             e.preventDefault();
             addElement()
