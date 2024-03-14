@@ -294,45 +294,74 @@
                 <div class="row p-0 elements" id="elements">
                   <div class="col-md-4 mb-2">
                     <div class="card">
-                      <div class="card-header d-flex justify-content-between bg-grey"> Untitled Widget  
-                          <div class="Widget-edit text-secondary">
-                            <i class="fas fa-edit me-2"></i>      
-                            <i class="fas fa-times me-2"></i> 
-
-                          </div> 
+                      <div class="card-header d-flex justify-content-between bg-grey"> Untitled Widget <div class="Widget-edit text-secondary">
+                          <i class="fas fa-edit me-2"></i>
+                          <i class="fas fa-times me-2"></i>
+                        </div>
                       </div>
                       <div class="card-body text-center">
-                       <div class="mb-4">  
-                              <img src="img/icons/EmptyInbox.svg">
-                       </div>
-                       <h5 class="card-title">Your widget card is empty </h5>
+                        <div class="mb-4">
+                          <img src="img/icons/EmptyInbox.svg">
+                        </div>
+                        <h5 class="card-title">Your widget card is empty </h5>
                         <p class="card-text mb-1">You need to configure it as per your requirement</p>
-                        <a href="#" class="text-decoration-none ">Configure</a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#configure-widget">Configure</a>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-4 mb-2">
                     <div class="card">
-                      <div class="card-header d-flex justify-content-between bg-grey"> Untitled Widget  
-                          <div class="Widget-edit text-secondary">
-                            <i class="fas fa-edit me-2"></i>      
-                            <i class="fas fa-times me-2"></i> 
-
-                          </div> 
+                      <div class="card-header d-flex justify-content-between bg-grey"> Untitled Widget <div class="Widget-edit text-secondary">
+                          <i class="fas fa-edit me-2"></i>
+                          <i class="fas fa-times me-2"></i>
+                        </div>
                       </div>
                       <div class="card-body text-center">
-                       <div class="mb-4">  
-                              <img src="img/icons/EmptyInbox.svg">
-                       </div>
-                       <h5 class="card-title">Your widget card is empty</h5>
+                        <div class="mb-4">
+                          <img src="img/icons/EmptyInbox.svg">
+                        </div>
+                        <h5 class="card-title">Your widget card is empty</h5>
                         <p class="card-text mb-1">You need to configure it as per your requirement</p>
-                        <a href="#" class="text-decoration-none">Configure</a>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#configure-widget">Configure</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Configure modal -->
+    <div class="modal fade" id="configure-widget" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="configure-widgetLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="configure-widgetLabel">Add New Widget</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body overflow-hidden p-0">
+            <div class="row">
+              <div class="col-md-3">
+                <ul class="nav nav-tabs border-end bg-grey" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Add-New-tab" data-bs-toggle="tab" data-bs-target="#Add-New" type="button" role="tab" aria-controls="home" aria-selected="true">Add New</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Widgets-Library-tab" data-bs-toggle="tab" data-bs-target="#Widgets-Library" type="button" role="tab" aria-controls="Widgets-Library" aria-selected="false">Widgets Library</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active p-2 border-end" id="Add-New" role="tabpanel" aria-labelledby="Add-New-tab"> Sample-1asdsadsadsadsadsadsa </div>
+                  <div class="tab-pane fade p-2 border-end" id="Widgets-Library" role="tabpanel" aria-labelledby="Widgets-Library-tab"> Sample-2 </div>
+                </div>
+              </div>
+              <div class="col-md-9"> Sample-2 </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-grey p-0 border-0">
+            <button type="button" class="btn btn-primary me-2">Save Changes</button>
           </div>
         </div>
       </div>
@@ -397,37 +426,36 @@
         }).trigger('change');
       });
     </script>
-    <script>
-       function addElement() {
-        $("#elements").append(
-          "<div class='col-md-4 mb-2'>"+
-  "<div class='card'>"+
-    "<div class='card-header d-flex justify-content-between bg-grey'> Untitled Widget "+
-      "<div class='Widget-edit text-secondary'>"+
-        " <i class='fas fa-edit me-2'></i>"+
-        "<i class='fas fa-times me-2'></i>"+
-        "</div>"+
-        "</div>"+
-        "<div class='card-body text-center'>"+
-          "<div class='mb-4'>"+
-            "<img src='img/icons/EmptyInbox.svg'>"+
-            "</div>"+
-            " <h5 class='card-title'>Your widget card is empty </h5>"+
-            "<p class='card-text mb-1'>You need to configure it as per your requirement</p>"+
-            "<a href='#' class='text-decoration-none'>Configure</a>"+
-            "</div>"+
-            "</div>"+
-            "</div>"+
-            "</li>");     
-  
+     <script>
+      function addElement() {
+       $("#elements").append(
+         "<div class='col-md-4 mb-2'>"+
+ "<div class='card'>"+
+   "<div class='card-header d-flex justify-content-between bg-grey'> Untitled Widget "+
+     "<div class='Widget-edit text-secondary'>"+
+       " <i class='fas fa-edit me-2'></i>"+
+       "<i class='fas fa-times me-2'></i>"+
+       "</div>"+
+       "</div>"+
+       "<div class='card-body text-center'>"+
+         "<div class='mb-4'>"+
+           "<img src='img/icons/EmptyInbox.svg'>"+
+           "</div>"+
+           " <h5 class='card-title'>Your widget card is empty </h5>"+
+           "<p class='card-text mb-1'>You need to configure it as per your requirement</p>"+
+           "<a href='#' class='text-decoration-none'>Configure</a>"+
+           "</div>"+
+           "</div>"+
+           "</div>"+
+           "</li>");     
+ 
 }
-
-   $(function() {
-          $("#add-todo-item").on('click', function(e) {
-            e.preventDefault();
-            addElement()
-          });
-        });
-    </script>
+  $(function() {
+         $("#add-todo-item").on('click', function(e) {
+           e.preventDefault();
+           addElement()
+         });
+       });
+   </script>
   </body>
 </html>
