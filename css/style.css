@@ -1324,9 +1324,6 @@ body {
 .tab-body{
   height: calc(100vh - 400px);
 }
-.card-calc{
-  height: calc(100vh - 319px) !important;
-}
 
 
 @media only screen   
@@ -2510,47 +2507,36 @@ cursor: pointer;
   width: 100%;
 }
 
-
-
-
-.card{
-    border:none;
-
-    position:relative;
-    overflow:hidden;
-    border-radius:8px;
-    cursor:pointer;
-}
-
+  
+ 
 .card:before{
-    
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background-color:#E1BEE7;
-    transform:scaleY(1);
-    transition:all 0.5s;
-    transform-origin: bottom
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#E1BEE7;
+  transform:scaleY(1);
+  transition:all 0.5s;
+  transform-origin: bottom
 }
 
 .card:after{
-    
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background-color:#18243e;
-    transform:scaleY(0);
-    transition:all 0.5s;
-    transform-origin: bottom
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#18243e;
+  transform:scaleY(0);
+  transition:all 0.5s;
+  transform-origin: bottom
 }
 
 .card:hover::after{
-    transform:scaleY(1);
+  transform:scaleY(1);
 }
-  
