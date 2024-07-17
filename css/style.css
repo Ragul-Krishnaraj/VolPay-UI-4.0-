@@ -1324,6 +1324,10 @@ body {
 .tab-body{
   height: calc(100vh - 400px);
 }
+.card-calc{
+  height: calc(100vh - 319px) !important;
+}
+
 
 @media only screen   
 and (min-width: 1030px)   
@@ -1333,6 +1337,7 @@ and (max-width: 1366px)    {
   height: calc(100vh - 400px) !important;
   overflow-x: hidden;
 } 
+
 
  .tab-custom{
 height: calc(100vh - 408px) !important;
