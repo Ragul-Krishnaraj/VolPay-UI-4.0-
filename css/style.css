@@ -1337,7 +1337,7 @@ and (max-width: 1366px)    {
 
 
  .tab-custom{
-height: calc(100vh - 408px) !important;
+height: calc(100vh - 344px) !important;
     overflow-x: hidden;
   }
 
