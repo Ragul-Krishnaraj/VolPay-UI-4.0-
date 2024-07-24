@@ -2674,19 +2674,23 @@ cursor: pointer;
   transition: all 0.3s ease;
 }
 .custom-radios input[type="radio"]#color-1 + label span {
-  background-color: #2ecc71;
+  background-color: rgb(45, 64, 99);
+  outline: 1px dashed !important; 
+
 }
 .custom-radios input[type="radio"]#color-2 + label span {
-  background-color: #3498db;
+  background-color: rgb(0, 0, 0);
+  outline: 1px dashed !important; 
 }
 .custom-radios input[type="radio"]#color-3 + label span {
-  background-color: #f1c40f;
+  background-color: rgb(0, 62, 169);
+  outline: 1px dashed !important; 
 }
-.custom-radios input[type="radio"]#color-4 + label span {
-  background-color: #e74c3c;
-}
+ 
 .custom-radios input[type="radio"]:checked + label span img {
   opacity: 1;
 }
 
+
+/* outline: 1px dashed !important; */
 
