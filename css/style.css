@@ -2626,17 +2626,6 @@ cursor: pointer;
 }
 
 
-.p-20{
-  padding: 20px;
-}
-
-.toggle-span , .toggle-span1  {
-  display: none;
- }
-
- .form-switch .form-check-input {
-    cursor: pointer;
-}
 
 
  
@@ -2694,3 +2683,64 @@ cursor: pointer;
 
 /* outline: 1px dashed !important; */
 
+/* Right Side bar settings  */
+.settings-toggle svg {
+  height: 20px;
+  margin-top: -.25rem;
+  width: 20px;
+}
+
+ .bg-standard {
+   background-color: #18243E!important;
+   color:white;
+}
+
+.settings-toggle {
+  background: #3b7ddd;
+  border-radius: 50%;
+  bottom: 60px;
+  color: #fff;
+  cursor: pointer;
+  height: 52px;
+  padding: 1rem;
+  position: fixed;
+  right: 20px;
+  width: 52px;
+}
+
+ 
+
+ 
+  
+
+.modal-dialog {
+  max-width: 50%;
+  }
+  .modal-dialog-slideout {
+   margin: 0 0 0 auto;
+  background: #fff;
+  }
+  .modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%, 0)scale(1);
+  transform: translate(100%, 0)scale(1);
+  }
+  .modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  display: flex;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  height: 100%;
+  }
+  
+  .modal-dialog-slideout .modal-content {
+  border: 0;
+  }
+  .modal-dialog-slideout .modal-header,
+  .modal-dialog-slideout .modal-footer {
+  height: 4rem;
+  display: block;
+  }
+  
+  
+  
