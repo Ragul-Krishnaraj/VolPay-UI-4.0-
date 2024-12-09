@@ -1499,7 +1499,7 @@ background: #E6EBF2;
     position: absolute;
     height: 16px;
     width: 16px;
-    background-color: #E6EBF2;
+    background-color: #44AB1A;
     border-radius: 15px;
     left: calc(50px / 2);
     transform: translateX(-45%);
@@ -2710,9 +2710,6 @@ cursor: pointer;
 
  
 
- 
-  
-
 .modal-dialog {
   max-width: 50%;
   }
@@ -2742,5 +2739,9 @@ cursor: pointer;
   display: block;
   }
   
+
+  .bg{
+    background:#E6EBF2;
+  }
   
   
