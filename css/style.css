@@ -2744,4 +2744,17 @@ cursor: pointer;
     background:#E6EBF2;
   }
   
+
+  .Distribution-data .step.minimized.two.step::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #939b90;
+    border-radius: 15px;
+    left: calc(50px / 2);
+    transform: translateX(-45%);
+    z-index: 2;
+    border: 2px solid #E6EBF2;
+}
   
