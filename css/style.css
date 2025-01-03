@@ -2743,6 +2743,16 @@ cursor: pointer;
   .bg{
     background:#E6EBF2;
   }
+
+  .pd-12{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .bg-custom{
+    background: #F5F5F5 url(../img/login/login-bg.png) !important;
+
+  }
   
 
   .Distribution-data .step.minimized.two.step::before {
@@ -2758,3 +2768,9 @@ cursor: pointer;
     border: 2px solid #E6EBF2;
 }
   
+
+ 
+
+
+/* for carosel */
+
